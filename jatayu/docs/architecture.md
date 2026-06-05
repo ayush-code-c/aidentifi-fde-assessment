@@ -94,19 +94,32 @@ must personally check. We never fabricate detail to inflate a sparse profile.
 
 ## 6. Credit accounting & allocation
 
-**Cost model (documented assumption).** On the Coresignal v2 clean Employee API,
-search returns IDs and is treated as non-charging; **collect** (per profile, bulk
-download) is the credit-bearing unit — modelled at **1 credit / profile** in
-`CreditLedger.COST_COLLECT`. If the trial meters differently, it is a one-line
-change; the ledger logic is unaffected. Multisource enrichment is out of scope
-per the brief.
+**Cost model (verified against Coresignal docs).** Credits are charged **per
+successful request (HTTP 200)**: **1 per `/search/es_dsl` request** (each page),
+**1 per `/search/es_dsl/preview`**, and **1 per `/collect/{id}`**
+(`CreditLedger.COST_SEARCH / COST_PREVIEW / COST_COLLECT`). So the dominant cost
+is collect — searching the universe is one credit per page, collecting a profile
+is one credit each. Multisource enrichment is out of scope per the brief.
+([ref](https://docs.coresignal.com/employee-api/clean-employee-api))
+
+**Live-mode discipline — preview before you collect.** Because search returns
+only IDs (no profile fields), you cannot pre-screen on profile content before
+paying to collect. The discipline therefore lives in two places: (1) the ES
+filter does the geography/function/industry/exclusion gating **server-side**, so
+the ID set is already tight; (2) **`jatayu preview`** (the `/preview` endpoint, 1
+credit, collects nothing) lets you validate a filter's match count and tune the
+YAML *before* spending collect credits. The one gate that can't run pre-collect
+is `min_years_in_function` (needs the experience array), so the local pre-screen
+applies it post-collect as a safety net — it should drop few profiles if the
+filter is well-tuned. In **offline** mode collect is free, so the pipeline
+collects-then-pre-screens to the identical final set.
 
 **Planned allocation (of the 300 trial credits).**
 
 | Phase | Credits | Purpose |
 |---|---:|---|
-| Dev / filter validation | ~50 | 2–3 small pulls (15–30 profiles) to tune the filter & inspect raw precision before scaling. Validate that the *raw pull* (not the ranked list) is dense with fits. |
-| Production pull | ~220 | One disciplined pull against the tuned filter (`pull.target_raw_profiles: 220`). |
+| Dev / filter validation | ~50 | Mostly cheap `preview` calls (1 credit, 0 collects) to tune the filter, plus 2–3 small collect pulls (15–30 profiles) to eyeball raw precision before scaling. Validate that the *raw pull* (not the ranked list) is dense with fits. |
+| Production pull | ~220 | One disciplined run: a few search-page credits + ~220 collect credits against the tuned filter (`pull.target_raw_profiles: 220`). |
 | Reserve | ~30 | A second corrective pull if dev surfaces a filter gap (e.g. a missed title variant). |
 
 I keep the suggested 50/250 shape but hold ~30 of the production budget as a

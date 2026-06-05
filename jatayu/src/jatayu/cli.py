@@ -39,7 +39,25 @@ def main(argv=None) -> int:
     p_q = sub.add_parser("show-query", help="print the compiled Coresignal ES query")
     p_q.add_argument("--mandate", required=True)
 
+    p_p = sub.add_parser("preview", help="cheap dev filter-validation (1 credit live, 0 offline)")
+    p_p.add_argument("--mandate", required=True)
+    p_p.add_argument("--mode", default=None, choices=["offline", "live"])
+
     args = parser.parse_args(argv)
+
+    if args.cmd == "preview":
+        from .coresignal_client import make_client
+        from .credit_ledger import CreditLedger
+        cfg = load_mandate(args.mandate)
+        settings = Settings()
+        if args.mode:
+            settings.mode = args.mode
+        ledger = CreditLedger()
+        client = make_client(settings, ledger, stage="dev")
+        result = client.preview(cfg["filter"], purpose="dev:filter-validation")
+        print(json.dumps({"preview": result, "credits_spent": ledger.total_spent,
+                          "mode": settings.mode}, indent=2))
+        return 0
 
     if args.cmd == "show-query":
         cfg = load_mandate(args.mandate)

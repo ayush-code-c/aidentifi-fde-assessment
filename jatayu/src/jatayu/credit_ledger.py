@@ -29,10 +29,13 @@ class CreditEntry:
 class CreditLedger:
     """Accumulates credit entries and writes the credit-log CSV deliverable."""
 
-    # Coresignal trial credit costs (clean profile API, bulk download).
-    # Documented assumption — see docs/architecture.md "Credit Accounting".
-    COST_SEARCH = 0      # filter/search returns IDs; charged on collect, not search
-    COST_COLLECT = 1     # 1 credit per profile collected (clean API)
+    # Coresignal v2 clean Employee API credit costs. Per the docs, credits are
+    # charged PER SUCCESSFUL REQUEST (HTTP 200): one credit per search request and
+    # one per collect request. See docs/architecture.md "Credit Accounting".
+    # Ref: https://docs.coresignal.com/employee-api/clean-employee-api
+    COST_SEARCH = 1      # 1 credit per /search/es_dsl request (each page)
+    COST_PREVIEW = 1     # 1 credit per /search/es_dsl/preview request (dev validation)
+    COST_COLLECT = 1     # 1 credit per /collect/{id} request
 
     def __init__(self) -> None:
         self.entries: list[CreditEntry] = []

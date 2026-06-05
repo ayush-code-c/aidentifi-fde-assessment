@@ -62,9 +62,20 @@ Employee schema (field names + nesting), so nothing downstream changes.
 ```bash
 cp .env.example .env          # then fill in CORESIGNAL_API_KEY
 # set JATAYU_MODE=live and (optionally) a real LLM provider in .env
+
+# 1) DEV: validate the filter cheaply (1 credit, collects nothing) and iterate
+#    the YAML until the match count looks tight before spending collect credits.
+python -m jatayu preview --mandate config/mandate_a_compliance_sg.yaml
+
+# 2) PRODUCTION: run the real pull (a few search credits + ~220 collect credits)
 python -m jatayu run --mandate config/mandate_a_compliance_sg.yaml \
                      --out deliverables/mandate_a --stage production
 ```
+
+Verified against Coresignal v2 docs: auth is an **`apikey`** header (the client
+sets this for you), credits are **1 per search request and 1 per collect**, and
+the `/search/es_dsl/preview` endpoint backs `jatayu preview` for cheap dev
+validation. See the credit-accounting section of the architecture doc.
 
 > **Note for the reviewer:** the committed `deliverables/` were produced in
 > **offline** mode (synthetic data, 0 credits) so the repo runs anywhere with no

@@ -26,10 +26,17 @@ used (with confidence), hooks dropped below threshold, and any grounding flags.
 Use a real LLM for the bespoke tier:
 
 ```bash
-cp .env.example .env        # set ANTHROPIC_API_KEY
+cp .env.example .env        # set ANTHROPIC_API_KEY (default model: claude-sonnet-4-6)
 OUTREACH_LLM_PROVIDER=anthropic python -m outreach run --recipients data/recipients.csv \
   --positioning config/aidentifi_positioning.yaml --out outputs
 ```
+
+The Anthropic/OpenAI call paths are wired and current (`messages.create` /
+`chat.completions.create`); the bespoke tier receives the *same grounded brief* as
+the template tier (approved hooks only) and the grounding guardrail still runs on
+its output — so switching to a real model raises register quality **without**
+loosening the anti-hallucination contract. If the SDK call ever fails mid-batch,
+each message degrades to the deterministic template rather than erroring the run.
 
 ## Recipients are data, not code
 

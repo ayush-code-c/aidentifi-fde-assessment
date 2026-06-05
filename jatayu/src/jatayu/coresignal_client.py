@@ -35,7 +35,13 @@ class BaseClient:
 
 
 class LiveClient(BaseClient):
-    """Talks to the real Coresignal v2 clean Employee API."""
+    """Talks to the real Coresignal v2 clean Employee API.
+
+    Auth: `apikey` header. Credits: 1 per search request (each page), 1 per
+    collect request. Endpoints:
+      POST /employee_clean/search/es_dsl[/preview]
+      GET  /employee_clean/collect/{id}
+    """
 
     def __init__(self, api_key: str, base_url: str, ledger: CreditLedger, stage="production"):
         super().__init__(ledger, stage)
@@ -44,31 +50,59 @@ class LiveClient(BaseClient):
         self._requests = requests
         self.base_url = base_url.rstrip("/")
         self.session = requests.Session()
+        # Coresignal v2 authenticates with an `apikey` header (NOT Bearer).
         self.session.headers.update(
-            {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+            {"apikey": api_key, "Content-Type": "application/json"}
         )
+
+    def preview(self, filter_cfg: dict, *, purpose: str) -> dict:
+        """Cheap dev validation: see how many/which profiles a filter matches
+        WITHOUT collecting them. 1 search credit; collects nothing."""
+        query = build_es_query(filter_cfg)
+        url = f"{self.base_url}/employee_clean/search/es_dsl/preview"
+        resp = self.session.post(url, data=json.dumps(query), timeout=60)
+        if resp.status_code != 200:
+            raise CoresignalError(f"preview failed {resp.status_code}: {resp.text[:300]}")
+        data = resp.json()
+        self.ledger.record(
+            endpoint="employee_clean/search/es_dsl/preview",
+            search_query_or_profile_id=json.dumps(query["query"])[:200],
+            credit_cost=CreditLedger.COST_PREVIEW, profiles_returned=0,
+            stage_purpose=purpose, useful_yes_no="yes",
+            notes="filter preview (no collect) — dev validation", stage=self.stage,
+        )
+        return data
 
     def search_ids(self, filter_cfg: dict, *, purpose: str) -> list[str]:
         query = build_es_query(filter_cfg)
         target = filter_cfg.get("pull", {}).get("target_raw_profiles", 200)
+        page_size = filter_cfg.get("pull", {}).get("page_size", 100)
         url = f"{self.base_url}/employee_clean/search/es_dsl"
-        resp = self.session.post(url, data=json.dumps(query), timeout=60)
-        if resp.status_code != 200:
-            raise CoresignalError(f"search failed {resp.status_code}: {resp.text[:300]}")
-        ids = resp.json()
-        ids = [str(i) for i in ids][:target]
-        # Search itself is not charged on the clean API (charged on collect).
-        self.ledger.record(
-            endpoint="employee_clean/search/es_dsl",
-            search_query_or_profile_id=json.dumps(query["query"])[:200],
-            credit_cost=CreditLedger.COST_SEARCH,
-            profiles_returned=len(ids),
-            stage_purpose=purpose,
-            useful_yes_no="yes",
-            notes=f"ES DSL search; capped at target {target}",
-            stage=self.stage,
-        )
-        return ids
+        ids: list[str] = []
+        offset = 0
+        # Paginate with from/size; each page request costs 1 search credit. Stop
+        # at target or when a page returns fewer than page_size results.
+        while len(ids) < target:
+            body = {**query, "from": offset, "size": page_size}
+            resp = self.session.post(url, data=json.dumps(body), timeout=60)
+            if resp.status_code != 200:
+                raise CoresignalError(f"search failed {resp.status_code}: {resp.text[:300]}")
+            page = [str(i) for i in resp.json()]
+            self.ledger.record(
+                endpoint="employee_clean/search/es_dsl",
+                search_query_or_profile_id=json.dumps(query["query"])[:180],
+                credit_cost=CreditLedger.COST_SEARCH, profiles_returned=len(page),
+                stage_purpose=purpose, useful_yes_no="yes" if page else "no",
+                notes=f"ES DSL search page from={offset} size={page_size}",
+                stage=self.stage,
+            )
+            if not page:
+                break
+            ids.extend(page)
+            offset += page_size
+            if len(page) < page_size:
+                break
+        return ids[:target]
 
     def collect(self, ids: list[str], *, purpose: str) -> list[dict]:
         out: list[dict] = []
@@ -108,6 +142,19 @@ class FixtureClient(BaseClient):
         with self.fixtures_path.open("r", encoding="utf-8") as fh:
             self._profiles: list[dict] = json.load(fh)
         self._by_id = {str(p["id"]): p for p in self._profiles}
+
+    def preview(self, filter_cfg: dict, *, purpose: str) -> dict:
+        """Offline mirror of the live preview: count matches, 0 credits."""
+        pred = local_predicate(filter_cfg)
+        n = sum(1 for p in self._profiles if pred(p))
+        self.ledger.record(
+            endpoint="fixture/preview",
+            search_query_or_profile_id="local_predicate(mandate.filter)",
+            credit_cost=0, profiles_returned=0, stage_purpose=purpose,
+            useful_yes_no="yes", notes=f"offline preview: {n} matches (0 credits)",
+            stage=self.stage,
+        )
+        return {"count": n}
 
     def search_ids(self, filter_cfg: dict, *, purpose: str) -> list[str]:
         pred = local_predicate(filter_cfg)
