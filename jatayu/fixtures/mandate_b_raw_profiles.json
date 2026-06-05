@@ -1,0 +1,900 @@
+[
+  {
+    "id": 100500,
+    "name": "Cheryl Tan",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100500",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Multi-Asset",
+      "Private Equity",
+      "CFA",
+      "Asset Allocation"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Investment Director",
+        "company_name": "Tan Family Office",
+        "company_industry": "Investment Management",
+        "company_size": 15,
+        "date_from": "2016-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder."
+      },
+      {
+        "title": "Portfolio Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2008-01",
+        "date_to": "2016-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Multi-asset discretionary portfolio management."
+      }
+    ],
+    "summary": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder.",
+    "title": "Investment Director",
+    "headline": "Investment Director",
+    "current_title": "Investment Director",
+    "current_company": "Tan Family Office",
+    "active_experience_company_name": "Tan Family Office"
+  },
+  {
+    "id": 100501,
+    "name": "Vikram Chua",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100501",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Multi-Asset",
+      "Private Equity",
+      "CFA",
+      "Asset Allocation"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Investment Director",
+        "company_name": "Evergreen Family Office",
+        "company_industry": "Investment Management",
+        "company_size": 15,
+        "date_from": "2018-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder."
+      },
+      {
+        "title": "Portfolio Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2010-01",
+        "date_to": "2018-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Multi-asset discretionary portfolio management."
+      }
+    ],
+    "summary": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder.",
+    "title": "Investment Director",
+    "headline": "Investment Director",
+    "current_title": "Investment Director",
+    "current_company": "Evergreen Family Office",
+    "active_experience_company_name": "Evergreen Family Office"
+  },
+  {
+    "id": 100502,
+    "name": "Faizal Iyer",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100502",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Multi-Asset",
+      "Private Equity",
+      "CFA",
+      "Asset Allocation"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Investment Director",
+        "company_name": "Banyan Tree SFO",
+        "company_industry": "Investment Management",
+        "company_size": 15,
+        "date_from": "2018-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder."
+      },
+      {
+        "title": "Portfolio Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2010-01",
+        "date_to": "2018-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Multi-asset discretionary portfolio management."
+      }
+    ],
+    "summary": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder.",
+    "title": "Investment Director",
+    "headline": "Investment Director",
+    "current_title": "Investment Director",
+    "current_company": "Banyan Tree SFO",
+    "active_experience_company_name": "Banyan Tree SFO"
+  },
+  {
+    "id": 100503,
+    "name": "Yong Lim",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100503",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Multi-Asset",
+      "Private Equity",
+      "CFA",
+      "Asset Allocation"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Investment Director",
+        "company_name": "Tan Family Office",
+        "company_industry": "Investment Management",
+        "company_size": 15,
+        "date_from": "2016-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder."
+      },
+      {
+        "title": "Portfolio Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2008-01",
+        "date_to": "2016-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Multi-asset discretionary portfolio management."
+      }
+    ],
+    "summary": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder.",
+    "title": "Investment Director",
+    "headline": "Investment Director",
+    "current_title": "Investment Director",
+    "current_company": "Tan Family Office",
+    "active_experience_company_name": "Tan Family Office"
+  },
+  {
+    "id": 100504,
+    "name": "Wei Menon",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100504",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Multi-Asset",
+      "Private Equity",
+      "CFA",
+      "Asset Allocation"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Investment Director",
+        "company_name": "Evergreen Family Office",
+        "company_industry": "Investment Management",
+        "company_size": 15,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder."
+      },
+      {
+        "title": "Portfolio Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2006-01",
+        "date_to": "2014-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Multi-asset discretionary portfolio management."
+      }
+    ],
+    "summary": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder.",
+    "title": "Investment Director",
+    "headline": "Investment Director",
+    "current_title": "Investment Director",
+    "current_company": "Evergreen Family Office",
+    "active_experience_company_name": "Evergreen Family Office"
+  },
+  {
+    "id": 100505,
+    "name": "Mei Lee",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100505",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Multi-Asset",
+      "Private Equity",
+      "CFA",
+      "Asset Allocation"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Investment Director",
+        "company_name": "Banyan Tree SFO",
+        "company_industry": "Investment Management",
+        "company_size": 15,
+        "date_from": "2018-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder."
+      },
+      {
+        "title": "Portfolio Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2010-01",
+        "date_to": "2018-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Multi-asset discretionary portfolio management."
+      }
+    ],
+    "summary": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder.",
+    "title": "Investment Director",
+    "headline": "Investment Director",
+    "current_title": "Investment Director",
+    "current_company": "Banyan Tree SFO",
+    "active_experience_company_name": "Banyan Tree SFO"
+  },
+  {
+    "id": 100506,
+    "name": "Arjun Nair",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100506",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Multi-Asset",
+      "Private Equity",
+      "CFA",
+      "Asset Allocation"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Investment Director",
+        "company_name": "Tan Family Office",
+        "company_industry": "Investment Management",
+        "company_size": 15,
+        "date_from": "2016-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder."
+      },
+      {
+        "title": "Portfolio Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2008-01",
+        "date_to": "2016-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Multi-asset discretionary portfolio management."
+      }
+    ],
+    "summary": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder.",
+    "title": "Investment Director",
+    "headline": "Investment Director",
+    "current_title": "Investment Director",
+    "current_company": "Tan Family Office",
+    "active_experience_company_name": "Tan Family Office"
+  },
+  {
+    "id": 100507,
+    "name": "Priya Koh",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100507",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Multi-Asset",
+      "Private Equity",
+      "CFA",
+      "Asset Allocation"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Investment Director",
+        "company_name": "Evergreen Family Office",
+        "company_industry": "Investment Management",
+        "company_size": 15,
+        "date_from": "2018-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder."
+      },
+      {
+        "title": "Portfolio Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2010-01",
+        "date_to": "2018-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Multi-asset discretionary portfolio management."
+      }
+    ],
+    "summary": "Investment Director at a single family office. Multi-asset portfolio construction across global public equities, fixed income, REITs, private equity, venture capital and hedge funds. Discretionary mandate reporting to the principal. Strong private bank and GP relationships driving co-investment deal flow. CFA charterholder.",
+    "title": "Investment Director",
+    "headline": "Investment Director",
+    "current_title": "Investment Director",
+    "current_company": "Evergreen Family Office",
+    "active_experience_company_name": "Evergreen Family Office"
+  },
+  {
+    "id": 100508,
+    "name": "Daniel Rao",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100508",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Private Banking",
+      "Discretionary"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Executive Director, Private Wealth",
+        "company_name": "DBS Bank",
+        "company_industry": "Banking",
+        "company_size": 20000,
+        "date_from": "2009-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Senior private banker with discretionary PM book for HNW/family office clients. Multi-asset allocation, public and private markets."
+      }
+    ],
+    "summary": "Senior private banker with discretionary PM book for HNW/family office clients. Multi-asset allocation, public and private markets.",
+    "title": "Executive Director, Private Wealth",
+    "headline": "Executive Director, Private Wealth",
+    "current_title": "Executive Director, Private Wealth",
+    "current_company": "DBS Bank",
+    "active_experience_company_name": "DBS Bank"
+  },
+  {
+    "id": 100509,
+    "name": "Sarah Sharma",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100509",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Private Banking",
+      "Discretionary"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Executive Director, Private Wealth",
+        "company_name": "OCBC Bank",
+        "company_industry": "Banking",
+        "company_size": 20000,
+        "date_from": "2009-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Senior private banker with discretionary PM book for HNW/family office clients. Multi-asset allocation, public and private markets."
+      }
+    ],
+    "summary": "Senior private banker with discretionary PM book for HNW/family office clients. Multi-asset allocation, public and private markets.",
+    "title": "Executive Director, Private Wealth",
+    "headline": "Executive Director, Private Wealth",
+    "current_title": "Executive Director, Private Wealth",
+    "current_company": "OCBC Bank",
+    "active_experience_company_name": "OCBC Bank"
+  },
+  {
+    "id": 100510,
+    "name": "Jun Pillai",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100510",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Private Banking",
+      "Discretionary"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Executive Director, Private Wealth",
+        "company_name": "UOB",
+        "company_industry": "Banking",
+        "company_size": 20000,
+        "date_from": "2009-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Senior private banker with discretionary PM book for HNW/family office clients. Multi-asset allocation, public and private markets."
+      }
+    ],
+    "summary": "Senior private banker with discretionary PM book for HNW/family office clients. Multi-asset allocation, public and private markets.",
+    "title": "Executive Director, Private Wealth",
+    "headline": "Executive Director, Private Wealth",
+    "current_title": "Executive Director, Private Wealth",
+    "current_company": "UOB",
+    "active_experience_company_name": "UOB"
+  },
+  {
+    "id": 100511,
+    "name": "Li Sim",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100511",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Private Banking",
+      "Discretionary"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Executive Director, Private Wealth",
+        "company_name": "Standard Chartered",
+        "company_industry": "Banking",
+        "company_size": 20000,
+        "date_from": "2007-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Senior private banker with discretionary PM book for HNW/family office clients. Multi-asset allocation, public and private markets."
+      }
+    ],
+    "summary": "Senior private banker with discretionary PM book for HNW/family office clients. Multi-asset allocation, public and private markets.",
+    "title": "Executive Director, Private Wealth",
+    "headline": "Executive Director, Private Wealth",
+    "current_title": "Executive Director, Private Wealth",
+    "current_company": "Standard Chartered",
+    "active_experience_company_name": "Standard Chartered"
+  },
+  {
+    "id": 100512,
+    "name": "Rajesh Wong",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100512",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Private Banking",
+      "Discretionary"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Executive Director, Private Wealth",
+        "company_name": "Citi",
+        "company_industry": "Banking",
+        "company_size": 20000,
+        "date_from": "2009-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Senior private banker with discretionary PM book for HNW/family office clients. Multi-asset allocation, public and private markets."
+      }
+    ],
+    "summary": "Senior private banker with discretionary PM book for HNW/family office clients. Multi-asset allocation, public and private markets.",
+    "title": "Executive Director, Private Wealth",
+    "headline": "Executive Director, Private Wealth",
+    "current_title": "Executive Director, Private Wealth",
+    "current_company": "Citi",
+    "active_experience_company_name": "Citi"
+  },
+  {
+    "id": 100513,
+    "name": "Aisha Teo",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100513",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Private Banking",
+      "Discretionary"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Executive Director, Private Wealth",
+        "company_name": "HSBC",
+        "company_industry": "Banking",
+        "company_size": 20000,
+        "date_from": "2011-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Senior private banker with discretionary PM book for HNW/family office clients. Multi-asset allocation, public and private markets."
+      }
+    ],
+    "summary": "Senior private banker with discretionary PM book for HNW/family office clients. Multi-asset allocation, public and private markets.",
+    "title": "Executive Director, Private Wealth",
+    "headline": "Executive Director, Private Wealth",
+    "current_title": "Executive Director, Private Wealth",
+    "current_company": "HSBC",
+    "active_experience_company_name": "HSBC"
+  },
+  {
+    "id": 100514,
+    "name": "Marcus Das",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100514",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Equities"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Portfolio Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2008-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Equities-only portfolio manager. Asian public equities long-only."
+      }
+    ],
+    "summary": "Equities-only portfolio manager. Asian public equities long-only.",
+    "title": "Portfolio Manager",
+    "headline": "Portfolio Manager",
+    "current_title": "Portfolio Manager",
+    "current_company": "Lioncross Investment Management",
+    "active_experience_company_name": "Lioncross Investment Management"
+  },
+  {
+    "id": 100515,
+    "name": "Grace Ng",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100515",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Equities"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Portfolio Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2008-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Equities-only portfolio manager. Asian public equities long-only."
+      }
+    ],
+    "summary": "Equities-only portfolio manager. Asian public equities long-only.",
+    "title": "Portfolio Manager",
+    "headline": "Portfolio Manager",
+    "current_title": "Portfolio Manager",
+    "current_company": "Lioncross Investment Management",
+    "active_experience_company_name": "Lioncross Investment Management"
+  },
+  {
+    "id": 100516,
+    "name": "Kumar Reddy",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100516",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Equities"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Portfolio Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2008-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Equities-only portfolio manager. Asian public equities long-only."
+      }
+    ],
+    "summary": "Equities-only portfolio manager. Asian public equities long-only.",
+    "title": "Portfolio Manager",
+    "headline": "Portfolio Manager",
+    "current_title": "Portfolio Manager",
+    "current_company": "Lioncross Investment Management",
+    "active_experience_company_name": "Lioncross Investment Management"
+  },
+  {
+    "id": 100517,
+    "name": "Hui Chan",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100517",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Equities"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Portfolio Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2008-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Equities-only portfolio manager. Asian public equities long-only."
+      }
+    ],
+    "summary": "Equities-only portfolio manager. Asian public equities long-only.",
+    "title": "Portfolio Manager",
+    "headline": "Portfolio Manager",
+    "current_title": "Portfolio Manager",
+    "current_company": "Lioncross Investment Management",
+    "active_experience_company_name": "Lioncross Investment Management"
+  },
+  {
+    "id": 100518,
+    "name": "Benjamin Goh",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100518",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [],
+    "education": [],
+    "experience": [
+      {
+        "title": "Head of Investments",
+        "company_name": "Tan Family Office",
+        "company_industry": "Investment Management",
+        "company_size": 12,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": ""
+      }
+    ],
+    "summary": "",
+    "title": "Head of Investments",
+    "headline": "Head of Investments",
+    "current_title": "Head of Investments",
+    "current_company": "Tan Family Office",
+    "active_experience_company_name": "Tan Family Office"
+  },
+  {
+    "id": 100519,
+    "name": "Natalie Ong",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100519",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [],
+    "education": [],
+    "experience": [
+      {
+        "title": "Head of Investments",
+        "company_name": "Evergreen Family Office",
+        "company_industry": "Investment Management",
+        "company_size": 12,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": ""
+      }
+    ],
+    "summary": "",
+    "title": "Head of Investments",
+    "headline": "Head of Investments",
+    "current_title": "Head of Investments",
+    "current_company": "Evergreen Family Office",
+    "active_experience_company_name": "Evergreen Family Office"
+  },
+  {
+    "id": 100520,
+    "name": "Ravi Tan",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100520",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [],
+    "education": [],
+    "experience": [
+      {
+        "title": "Head of Investments",
+        "company_name": "Banyan Tree SFO",
+        "company_industry": "Investment Management",
+        "company_size": 12,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": ""
+      }
+    ],
+    "summary": "",
+    "title": "Head of Investments",
+    "headline": "Head of Investments",
+    "current_title": "Head of Investments",
+    "current_company": "Banyan Tree SFO",
+    "active_experience_company_name": "Banyan Tree SFO"
+  },
+  {
+    "id": 100521,
+    "name": "Joanne Chua",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100521",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Investment Associate",
+        "company_name": "Serangoon Capital Partners",
+        "company_industry": "Investment Management",
+        "company_size": 40,
+        "date_from": "2022-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Investment associate, two years buy-side."
+      }
+    ],
+    "summary": "Investment associate, two years buy-side.",
+    "title": "Investment Associate",
+    "headline": "Investment Associate",
+    "current_title": "Investment Associate",
+    "current_company": "Serangoon Capital Partners",
+    "active_experience_company_name": "Serangoon Capital Partners"
+  },
+  {
+    "id": 100522,
+    "name": "Terence Iyer",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100522",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Investment Associate",
+        "company_name": "Serangoon Capital Partners",
+        "company_industry": "Investment Management",
+        "company_size": 40,
+        "date_from": "2022-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Investment associate, two years buy-side."
+      }
+    ],
+    "summary": "Investment associate, two years buy-side.",
+    "title": "Investment Associate",
+    "headline": "Investment Associate",
+    "current_title": "Investment Associate",
+    "current_company": "Serangoon Capital Partners",
+    "active_experience_company_name": "Serangoon Capital Partners"
+  }
+]

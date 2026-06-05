@@ -1,0 +1,176 @@
+# =============================================================================
+# Jatayu mandate config — MANDATE B
+# Investment Director, Singapore Single Family Office (13N)
+# =============================================================================
+# Provided to (a) prove the engine is mandate-agnostic and (b) back the Q1b
+# Configuration Migration Document. Mandate A is the EXECUTED mandate; this one
+# runs through the identical code path with zero code changes.
+# -----------------------------------------------------------------------------
+
+mandate:
+  id: mandate_b_invdir_sfo
+  name: "Investment Director — Singapore Single Family Office"
+  description: >
+    Investment Director for an established Singapore SFO (MAS Section 13N).
+    Multi-asset mandate across global public equities, fixed income, REITs, PE,
+    VC, hedge funds, alternatives. Reports to the principal. Senior seat,
+    broad scope.
+
+filter:
+  location:
+    countries: ["Singapore"]
+  active_experience: true
+
+  # Investment-function gate. Deliberately broad: SFO PMs hide behind vague
+  # titles ("Director", "Partner", "Head of Investments").
+  title_any:
+    - "investment director"
+    - "portfolio manager"
+    - "head of investments"
+    - "chief investment officer"
+    - "investment manager"
+    - "managing director"            # broad — disambiguated in scoring
+    - "investment principal"
+    - "head of portfolio"
+
+  industry_any:
+    - "Investment Management"
+    - "Capital Markets"
+    - "Venture Capital & Private Equity"
+    - "Financial Services"
+    - "Banking"                      # private banks are a valid feeder pool
+
+  must_not_title:
+    - "analyst"
+    - "associate"
+    - "intern"
+    - "relationship manager"         # pure RM / sales, no PM book
+
+  experience:
+    min_years_in_function: 13        # brief: 15+, floored to catch rounding
+    function_keywords: ["portfolio", "investment", "asset allocation", "buy-side", "fund"]
+
+  pull:
+    target_raw_profiles: 200
+    page_size: 100
+
+enrich:
+  fetch_full_profile: true
+  fields_required: [experience, education, summary, skills, location]
+  pre_screen:
+    drop_if_no_investment_role: true
+    drop_if_location_not_sg: true
+
+scoring:
+  llm_blend_default: 0.55            # fuzzier pool => lean more on LLM judgment
+  fit_threshold_strong: 90
+
+  sub_scores:
+
+    multi_asset_pm:
+      label: "Multi-Asset PM Track Record"
+      weight: 0.35
+      description: >
+        Discretionary PM track record ACROSS asset classes (public equities,
+        FI, REITs, PE, VC, HF). Single-asset specialists score low.
+      deterministic:
+        positive:
+          - {regex_any: "(multi[- ]asset|cross[- ]asset|asset allocation)", points: 30}
+          - {regex_any: "(public equit|fixed income|private equity|venture|hedge fund|REIT)", points: 10, repeatable: true, cap: 30}
+          - {any_title: ["portfolio manager", "chief investment officer", "investment director"], points: 15}
+        negative:
+          - {regex_any: "(equities only|fixed income only|single[- ]asset)", points: -20}
+      llm_rubric: >
+        Score 0-100 on breadth and seniority of a DISCRETIONARY multi-asset PM
+        track record spanning public and private markets. Reward people who have
+        actually run capital across several asset classes. Penalise single-asset
+        specialists, sell-side/advisory with no PM book, and step-up juniors.
+
+    sfo_mfo_fit:
+      label: "SFO / MFO / Discretionary Mandate Fit"
+      weight: 0.25
+      description: >
+        Prior SFO/MFO experience, or a senior buy-side seat with a discretionary
+        mandate, or HNW/family-office-facing private banking WITH a PM book.
+      deterministic:
+        positive:
+          - {regex_any: "(single family office|family office|SFO|MFO)", points: 30}
+          - {regex_any: "(discretionary|principal|endowment|sovereign)", points: 15}
+        negative:
+          - {regex_any: "(advisory only|sell[- ]side|brokerage)", points: -15}
+      llm_rubric: >
+        Score 0-100 on fit to a single-family-office investment seat: prior
+        SFO/MFO, or senior PM with discretionary mandate, or HNW/FO-facing
+        private banking with a real PM book. Penalise pure advisory/sell-side.
+
+    private_markets_access:
+      label: "Private-Market Relationships & Deal Flow"
+      weight: 0.18
+      description: >
+        Strong private bank / GP relationships for deal flow across PE/VC/alts.
+      deterministic:
+        positive:
+          - {regex_any: "(deal flow|co[- ]invest|GP relationship|direct investment|private bank)", points: 25}
+      llm_rubric: >
+        Score 0-100 on evidence of relationships and access that generate
+        private-market deal flow (GPs, private banks, co-investment networks).
+
+    sg_roots:
+      label: "Singapore Roots & Tenure"
+      weight: 0.14
+      description: >
+        Long SG tenure indicating commitment; Citizen/PR strongly preferred.
+      deterministic:
+        positive:
+          - {sg_tenure_years_gte: 10, points: 30}
+        negative:
+          - {sg_tenure_years_lte: 4, points: -20}
+      llm_rubric: >
+        Score 0-100 on length and continuity of a Singapore-based career as a
+        proxy for local roots and commitment to stay.
+
+    seniority_calibration:
+      label: "Seniority Calibration"
+      weight: 0.08
+      description: >
+        15+ years, senior enough to own portfolio construction but not so
+        over-scoped they would not report to a principal.
+      deterministic:
+        positive:
+          - {years_in_function_between: [15, 30], points: 30}
+        negative:
+          - {years_in_function_lte: 12, points: -20}
+      llm_rubric: >
+        Score 0-100 on seniority calibration for a seat reporting directly to a
+        principal: experienced enough to own portfolio construction end-to-end.
+
+ranking:
+  top_n: 10
+  tie_breakers: ["multi_asset_pm", "sfo_mfo_fit", "years_relevant_experience"]
+  flag_rules:
+    - {if_sub_score_below: {multi_asset_pm: 45}, flag: "single-asset risk — confirm cross-asset PM history"}
+    - {if_sg_tenure_below_years: 4, flag: "thin SG roots — confirm residency/commitment"}
+  confidence:
+    high_if_fields_present: ["experience", "summary", "education"]
+    low_if_summary_chars_lt: 120
+
+output:
+  years_experience_field: "years_in_investment_function"
+  columns:
+    - rank
+    - coresignal_id
+    - linkedin_url
+    - name
+    - current_title
+    - current_company
+    - years_relevant_experience
+    - fit_score
+    - sub_score_1   # multi_asset_pm
+    - sub_score_2   # sfo_mfo_fit
+    - sub_score_3   # private_markets_access
+    - sub_score_4   # sg_roots
+    - sub_score_other  # seniority_calibration
+    - rationale
+    - confidence
+    - credits_spent_on_this_candidate
+    - concerns_or_flags

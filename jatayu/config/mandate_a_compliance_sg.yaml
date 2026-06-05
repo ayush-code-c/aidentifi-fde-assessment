@@ -1,0 +1,264 @@
+# =============================================================================
+# Jatayu mandate config — MANDATE A
+# Sole Compliance Officer, Singapore MAS-licensed Asset Manager
+# =============================================================================
+# This file is the ENTIRE mandate definition. The Python code is mandate-
+# agnostic; everything specific to "who we are looking for" lives here.
+# Changing mandate = changing this file (see config/mandate_b_invdir_sfo.yaml
+# and docs/q1b_config_migration.md).
+# -----------------------------------------------------------------------------
+
+mandate:
+  id: mandate_a_compliance_sg
+  name: "Sole Compliance Officer — Singapore Asset Manager"
+  description: >
+    Sole compliance officer for a Singapore-HQ, MAS-licensed asset manager
+    (~SGD 400-700M proprietary AUM, larger third-party AUM via open-architecture
+    wrappers to Accredited Investors). Recently acquired by a global alternatives
+    manager; rebuilding institutional infrastructure. Transformational seat, no
+    team beneath the hire.
+
+# -----------------------------------------------------------------------------
+# STEP 1 — FILTER  (the Coresignal query: maximise 90%+ fits in the raw pull)
+# -----------------------------------------------------------------------------
+# Philosophy: the brief warns that title-matching "Compliance + Singapore +
+# Asset Management" returns hundreds of wrong fits. So the HARD filter stays
+# deliberately permissive on title but HARD on geography + function, and we push
+# the firm-scale / business-model discrimination into scoring (Step 3) where we
+# can reason rather than exclude. We tighten with must_not to strip the obvious
+# wrong-pools the brief names (pure banking, Big 4 advisory, regulator-only).
+filter:
+  # Coresignal Employee "clean" API — Elasticsearch DSL fragments, assembled by
+  # src/jatayu/filters.py. Field names follow Coresignal member schema.
+  location:
+    countries: ["Singapore"]
+    # SG-based only per brief. We do NOT filter on nationality (not reliably in
+    # Coresignal); PR/citizen nuance is handled as a soft signal in scoring.
+  active_experience: true            # require a current (no end-date) role
+
+  # Permissive function gate — ANY of these in title OR headline OR a recent role
+  title_any:
+    - "compliance"
+    - "chief compliance"
+    - "head of compliance"
+    - "compliance officer"
+    - "regulatory compliance"
+    - "head of legal and compliance"
+    - "legal and compliance"
+    - "MLRO"                          # money laundering reporting officer
+    - "risk and compliance"
+
+  # Firm-function gate — the candidate must have worked in/around asset & wealth
+  # management, NOT only banking/insurance/audit. Applied to company industry and
+  # company name tokens across the experience array.
+  industry_any:
+    - "Investment Management"
+    - "Asset Management"
+    - "Financial Services"
+    - "Venture Capital & Private Equity"
+    - "Capital Markets"
+
+  # Hard exclusions — the brief's named "weak" pools that we can exclude cheaply
+  # without losing true positives. Kept conservative on purpose.
+  must_not_title:
+    - "audit associate"
+    - "audit senior"                  # Big-4 advisory-only juniors
+    - "intern"
+    - "student"
+  must_not_current_company:
+    # Regulators / enforcement bodies — "MAS regulators with no industry side".
+    # NOTE: only excludes if CURRENT employer; ex-MAS who moved industry-side is
+    # a positive and must survive the filter.
+    - "Monetary Authority of Singapore"
+
+  experience:
+    # Total years in a compliance/regulatory function. Brief says 8-15 yrs;
+    # we floor at 7 to avoid clipping strong 8-yr profiles whose Coresignal
+    # date math rounds low, and we do NOT hard-cap the top (a 17-yr CCO is not a
+    # wrong fit) — seniority over-shoot is a scoring nuance, not a filter.
+    min_years_in_function: 7
+    function_keywords: ["compliance", "regulatory", "MLRO", "risk and compliance"]
+
+  # Pull sizing — see credit strategy in docs/architecture.md.
+  pull:
+    target_raw_profiles: 220          # production raw pull ceiling
+    page_size: 100
+
+# -----------------------------------------------------------------------------
+# STEP 2 — ENRICH (which fields we fetch full profiles for; credit-bearing)
+# -----------------------------------------------------------------------------
+enrich:
+  fetch_full_profile: true            # clean profile API, bulk download
+  fields_required:
+    - experience
+    - education
+    - summary
+    - skills
+    - location
+  # We never spend a credit enriching a profile that failed the cheap local
+  # pre-screen below (see pipeline.py). Saves ~production credits.
+  pre_screen:
+    drop_if_no_compliance_role: true
+    drop_if_location_not_sg: true
+
+# -----------------------------------------------------------------------------
+# STEP 3 — SCORE  (sub-scores → fit_score; ranking quality lives here)
+# -----------------------------------------------------------------------------
+# Each sub-score is 0-100. fit_score is the weighted sum (weights sum to 1.0).
+# Each sub-score blends DETERMINISTIC features (cheap, transparent, auditable)
+# with an LLM RUBRIC pass (nuanced texture the brief describes). The blend ratio
+# is per-sub-score. Recruiters can override any weight without touching code.
+scoring:
+  llm_blend_default: 0.5              # 0 = deterministic only, 1 = LLM only
+  fit_threshold_strong: 90           # "90%+ fit" definition used in reporting
+
+  sub_scores:
+
+    # --- sub_score_1 -------------------------------------------------------
+    compliance_ownership:
+      label: "Compliance Ownership & Seniority"
+      weight: 0.30
+      description: >
+        Sole / near-sole compliance ownership at a buy-side firm. CCO / Head of
+        Compliance / sole-officer titles score highest. Member of a large
+        compliance team scores lower (the seat has NO team beneath it).
+      deterministic:
+        positive:
+          - {any_title: ["chief compliance officer", "head of compliance", "sole compliance", "compliance director"], points: 35}
+          - {any_title: ["compliance officer", "MLRO", "deputy head of compliance"], points: 20}
+          - {regex_summary: "(sole|only) compliance", points: 25}
+          - {regex_summary: "built .* compliance (function|framework) from scratch", points: 15}
+        negative:
+          - {regex_summary: "team of (1[0-9]|[2-9][0-9])", points: -15}   # big team => not a sole seat
+          - {any_title: ["compliance analyst", "compliance associate", "junior"], points: -20}
+      llm_rubric: >
+        Score 0-100 how closely this person's compliance experience matches a
+        SOLE compliance officer at an independent asset manager who OWNS the full
+        stack (onboarding, MAS regulatory mgmt, fund governance, trade/risk
+        oversight, Board reporting) with no team beneath them. Reward end-to-end
+        ownership and Board-facing seniority; penalise narrow single-domain or
+        purely supervised roles inside a large compliance department.
+
+    # --- sub_score_2 -------------------------------------------------------
+    firm_type_fit:
+      label: "Firm Type & Scale Fit"
+      weight: 0.25
+      description: >
+        Independent / boutique SG asset manager (not a bulge-bracket bank, not
+        Big-4 advisory, not a regulator). Firm scale comparable to a SGD 400-700M
+        AUM house. The brief: signal lives in firm scale, not the role title.
+      deterministic:
+        positive:
+          - {company_industry_any: ["Investment Management", "Asset Management", "Venture Capital & Private Equity"], points: 25}
+          - {company_size_lte: 200, points: 20}                 # boutique scale
+          - {regex_summary: "(boutique|independent) (asset|fund|investment) manager", points: 15}
+        negative:
+          - {company_name_any: ["DBS", "OCBC", "UOB", "Standard Chartered", "Citi", "HSBC", "J.P. Morgan", "Goldman", "Morgan Stanley"], points: -25}  # bulge-bracket bank
+          - {company_name_any: ["Deloitte", "PwC", "KPMG", "Ernst & Young", "EY"], points: -20, only_if_no_industry_move: true}  # Big-4 advisory-only
+          - {company_size_gte: 5000, points: -15}
+      llm_rubric: >
+        Score 0-100 how well this person's EMPLOYERS match an independent /
+        boutique Singapore asset manager of ~SGD 400-700M proprietary AUM.
+        Reward independent AMs, fund managers, multi-/single-family offices that
+        run discretionary money. Penalise pure retail bank, insurer, Big-4
+        advisory-only, or regulator-only career shapes (the named weak pools).
+
+    # --- sub_score_3 -------------------------------------------------------
+    mas_regulatory_fit:
+      label: "MAS Regulatory & Licensing Fluency"
+      weight: 0.25
+      description: >
+        Demonstrated fluency with MAS CMS licensing categories, the Accredited
+        Investor vs Retail distinction, and ideally direct AI client onboarding
+        under the firm's OWN license (not retail/IFA-only).
+      deterministic:
+        positive:
+          - {regex_any: "(CMS|capital markets services) licen", points: 25}
+          - {regex_any: "accredited investor", points: 20}
+          - {regex_any: "MAS (regulatory|licen|return|notice|guideline)", points: 15}
+          - {regex_any: "(fund manager registration|RFMC|LFMC)", points: 15}
+        negative:
+          - {regex_any: "(retail|IFA)[^.]{0,40}(only|distribution)", points: -15}  # retail/IFA-only
+      llm_rubric: >
+        Score 0-100 on MAS regulatory depth specific to buy-side asset
+        management: CMS licence categories (LFMC/RFMC), the Accredited-Investor
+        vs Retail distinction, AI onboarding done under the firm's own licence.
+        Penalise candidates whose regulatory exposure is retail/IFA-only or pure
+        banking/insurance regulation with no asset-management licence context.
+
+    # --- sub_score_4 -------------------------------------------------------
+    business_model_fit:
+      label: "Business-Model & Product Fit"
+      weight: 0.12
+      description: >
+        Exposure to open-architecture / third-party fund distribution, private
+        markets (PE/PC/HF), and VCC structures — the firm's actual product shape.
+      deterministic:
+        positive:
+          - {regex_any: "open[- ]architecture", points: 20}
+          - {regex_any: "(VCC|variable capital company)", points: 20}
+          - {regex_any: "(private credit|private equity|hedge fund|alternatives)", points: 15}
+          - {regex_any: "(feeder|master[- ]feeder|fund of funds|third[- ]party fund)", points: 15}
+      llm_rubric: >
+        Score 0-100 on familiarity with the firm's product/business model:
+        open-architecture third-party fund distribution to Accredited Investors,
+        private-market wrappers (PE / private credit / hedge funds), and VCC
+        fund structures. Reward direct hands-on exposure; do not over-reward a
+        single keyword mention.
+
+    # --- sub_score_other ---------------------------------------------------
+    singapore_commitment:
+      label: "SG Commitment & Commercial Orientation"
+      weight: 0.08
+      description: >
+        Long Singapore tenure (commitment to stay) and a commercial, front-office
+        -partnering orientation rather than a pure police-the-business posture.
+      deterministic:
+        positive:
+          - {sg_tenure_years_gte: 8, points: 25}
+          - {regex_any: "(commercial|business partner|front office|enable|growth)", points: 15}
+        negative:
+          - {sg_tenure_years_lte: 3, points: -15}              # transient / new to SG
+      llm_rubric: >
+        Score 0-100 combining (a) length and continuity of Singapore-based
+        career as a proxy for commitment to stay, and (b) a COMMERCIAL posture —
+        partnering with the front office in a growth-mode firm rather than a
+        purely defensive control function.
+
+# -----------------------------------------------------------------------------
+# STEP 4 — RANK & REPORT
+# -----------------------------------------------------------------------------
+ranking:
+  top_n: 10
+  tie_breakers: ["compliance_ownership", "mas_regulatory_fit", "years_relevant_experience"]
+  # A candidate with a hard concern is surfaced, never silently dropped.
+  flag_rules:
+    - {if_sub_score_below: {firm_type_fit: 40}, flag: "firm-type mismatch — verify employer is buy-side"}
+    - {if_sub_score_below: {mas_regulatory_fit: 35}, flag: "thin MAS/CMS evidence — confirm in screen"}
+    - {if_sg_tenure_below_years: 3, flag: "short SG tenure — confirm residency/commitment"}
+  confidence:
+    # Confidence reflects DATA completeness, not fit. A great-looking but sparse
+    # profile gets HIGH fit + LOW confidence, surfaced honestly to the reviewer.
+    high_if_fields_present: ["experience", "summary", "education"]
+    low_if_summary_chars_lt: 120
+
+output:
+  years_experience_field: "years_in_compliance_function"
+  columns:
+    - rank
+    - coresignal_id
+    - linkedin_url
+    - name
+    - current_title
+    - current_company
+    - years_relevant_experience
+    - fit_score
+    - sub_score_1   # compliance_ownership
+    - sub_score_2   # firm_type_fit
+    - sub_score_3   # mas_regulatory_fit
+    - sub_score_4   # business_model_fit
+    - sub_score_other  # singapore_commitment
+    - rationale
+    - confidence
+    - credits_spent_on_this_candidate
+    - concerns_or_flags

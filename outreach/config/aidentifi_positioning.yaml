@@ -1,0 +1,79 @@
+# =============================================================================
+# Aidentifi positioning + outreach policy  (Q2)
+# =============================================================================
+# WORKING ASSUMPTION (per brief — not deep research). Aidentifi is an AI-native
+# executive search firm: it pairs forward-deployed engineering (tools like
+# Jatayu) with executive-search domain depth to produce tightly-calibrated
+# senior shortlists faster and more precisely than traditional retained search.
+# All positioning lives here so the outreach engine stays generic.
+# -----------------------------------------------------------------------------
+
+company:
+  name: Aidentifi
+  one_liner: >
+    AI-native executive search — engineering-built sourcing that produces
+    sharper senior shortlists, faster, than traditional retained search.
+  proof_points:
+    - "Sourcing tooling that ranks against the actual texture of a mandate, not job-title keywords."
+    - "Domain depth in financial services, asset & wealth management, and family offices."
+    - "Transparent, calibrated fit scoring — every shortlist decision is explainable."
+  # What we are NOT — keeps outreach honest and avoids over-claiming.
+  guardrails:
+    - "Never claim a prior relationship that doesn't exist."
+    - "Never invent a named mutual connection, deal, or event."
+    - "Never assert the recipient is hiring unless the evidence says so."
+
+# -----------------------------------------------------------------------------
+# Value-prop ANGLES. Each recipient is matched to the best-fitting angle by the
+# angle selector using observable signals. Angles are data; adding one is config.
+# -----------------------------------------------------------------------------
+angles:
+  scaling_senior_team:
+    when: "Recipient's firm is visibly growing / building out a senior function."
+    thesis: "Growth creates senior hiring you can't afford to get wrong; we de-risk the senior hire."
+    cta: "a 20-minute call on how you're thinking about senior hires this year"
+
+  hard_to_fill_niche:
+    when: "Recipient owns a niche/regulated senior function (compliance, investment, risk)."
+    thesis: "Niche senior roles fail on calibration, not effort; our sourcing is built for exactly that fit problem."
+    cta: "a short call to compare notes on the talent map for this role"
+
+  portfolio_talent:
+    when: "Recipient is PE/VC and builds leadership across portfolio companies."
+    thesis: "Repeatable senior placements across a portfolio reward a systematic, data-driven search partner."
+    cta: "a brief intro on supporting senior hires across your portfolio"
+
+  founder_first_senior_hire:
+    when: "Founder/principal making an early, high-stakes senior or first-exec hire."
+    thesis: "The first senior hire sets the ceiling; getting the calibration right matters more than speed."
+    cta: "a short conversation about that first senior hire when the time is right"
+
+  general_introduction:
+    when: "Fallback when signals are thin — lead with category relevance, not specifics."
+    thesis: "An introduction to how we approach senior search in your space."
+    cta: "a brief introduction whenever it's useful"
+
+# -----------------------------------------------------------------------------
+# Outreach policy — tone, length, channel, anti-hallucination.
+# -----------------------------------------------------------------------------
+policy:
+  channel_default: email
+  registers:
+    email:  { max_words: 130, greeting: "Hi {first_name}," , signoff: "Best,\nthe Aidentifi team" }
+    linkedin: { max_words: 75, greeting: "Hi {first_name} —", signoff: "— Aidentifi" }
+  voice: >
+    The register a senior partner would write themselves: direct, specific, no
+    marketing adjectives, one clear idea, one soft ask. No "I hope this finds you
+    well." No flattery that isn't earned by evidence.
+  personalization:
+    # Only reference a hook whose confidence >= this threshold. Below it, the
+    # message stays at category level (role/industry) and must NOT name specifics.
+    min_hook_confidence: 0.6
+    # If the best available hook is below this, the recipient is treated SPARSE.
+    sparse_if_top_hook_below: 0.5
+    max_specific_hooks: 2
+  anti_hallucination:
+    # Post-generation guardrail (guardrails.py) scans output for specifics not
+    # traceable to an approved hook and flags/over-writes them.
+    forbid_unsourced_proper_nouns: true
+    require_personalization_basis: true   # every message states WHY it's personal

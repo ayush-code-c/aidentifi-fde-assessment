@@ -1,0 +1,1741 @@
+[
+  {
+    "id": 100000,
+    "name": "Wei Tan",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100000",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "AML/CFT",
+      "Fund Governance",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance (Sole)",
+        "company_name": "Maplewell Capital",
+        "company_industry": "Investment Management",
+        "company_size": 35,
+        "date_from": "2023-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Sole compliance officer and CMS licence holder at a boutique independent asset manager. Built the compliance function from scratch. Own AI client onboarding under our own Capital Markets Services licence, MAS regulatory management, fund governance and Board reporting. Open-architecture third-party fund distribution (private credit, private equity, hedge funds) to Accredited Investors. VCC structures. Commercial business partner to the front office in a growth-mode firm."
+      },
+      {
+        "title": "Compliance Manager",
+        "company_name": "Keppel Straits Partners",
+        "company_industry": "Asset Management",
+        "company_size": 80,
+        "date_from": "2017-01",
+        "date_to": "2023-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager covering CMS licensing and AI onboarding."
+      }
+    ],
+    "summary": "Sole compliance officer and CMS licence holder at a boutique independent asset manager. Built the compliance function from scratch. Own AI client onboarding under our own Capital Markets Services licence, MAS regulatory management, fund governance and Board reporting. Open-architecture third-party fund distribution (private credit, private equity, hedge funds) to Accredited Investors. VCC structures. Commercial business partner to the front office in a growth-mode firm.",
+    "title": "Head of Compliance (Sole)",
+    "headline": "Head of Compliance (Sole)",
+    "current_title": "Head of Compliance (Sole)",
+    "current_company": "Maplewell Capital",
+    "active_experience_company_name": "Maplewell Capital"
+  },
+  {
+    "id": 100001,
+    "name": "Mei Chua",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100001",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "AML/CFT",
+      "Fund Governance",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Chief Compliance Officer",
+        "company_name": "Tanglin Asset Management",
+        "company_industry": "Investment Management",
+        "company_size": 60,
+        "date_from": "2021-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Chief Compliance Officer at an independent Singapore fund manager. Sole compliance ownership: MAS CMS licensing, Accredited Investor onboarding, trade and risk oversight, VCC fund governance. Partner with investment team to enable growth. Open-architecture distribution of alternatives."
+      },
+      {
+        "title": "Compliance Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Asset Management",
+        "company_size": 80,
+        "date_from": "2015-01",
+        "date_to": "2021-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager covering CMS licensing and AI onboarding."
+      }
+    ],
+    "summary": "Chief Compliance Officer at an independent Singapore fund manager. Sole compliance ownership: MAS CMS licensing, Accredited Investor onboarding, trade and risk oversight, VCC fund governance. Partner with investment team to enable growth. Open-architecture distribution of alternatives.",
+    "title": "Chief Compliance Officer",
+    "headline": "Chief Compliance Officer",
+    "current_title": "Chief Compliance Officer",
+    "current_company": "Tanglin Asset Management",
+    "active_experience_company_name": "Tanglin Asset Management"
+  },
+  {
+    "id": 100002,
+    "name": "Arjun Iyer",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100002",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "AML/CFT",
+      "Fund Governance",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance (Sole)",
+        "company_name": "Keppel Straits Partners",
+        "company_industry": "Investment Management",
+        "company_size": 60,
+        "date_from": "2022-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Sole compliance officer and CMS licence holder at a boutique independent asset manager. Built the compliance function from scratch. Own AI client onboarding under our own Capital Markets Services licence, MAS regulatory management, fund governance and Board reporting. Open-architecture third-party fund distribution (private credit, private equity, hedge funds) to Accredited Investors. VCC structures. Commercial business partner to the front office in a growth-mode firm."
+      },
+      {
+        "title": "Compliance Manager",
+        "company_name": "Serangoon Capital Partners",
+        "company_industry": "Asset Management",
+        "company_size": 80,
+        "date_from": "2016-01",
+        "date_to": "2022-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager covering CMS licensing and AI onboarding."
+      }
+    ],
+    "summary": "Sole compliance officer and CMS licence holder at a boutique independent asset manager. Built the compliance function from scratch. Own AI client onboarding under our own Capital Markets Services licence, MAS regulatory management, fund governance and Board reporting. Open-architecture third-party fund distribution (private credit, private equity, hedge funds) to Accredited Investors. VCC structures. Commercial business partner to the front office in a growth-mode firm.",
+    "title": "Head of Compliance (Sole)",
+    "headline": "Head of Compliance (Sole)",
+    "current_title": "Head of Compliance (Sole)",
+    "current_company": "Keppel Straits Partners",
+    "active_experience_company_name": "Keppel Straits Partners"
+  },
+  {
+    "id": 100003,
+    "name": "Priya Lim",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100003",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "AML/CFT",
+      "Fund Governance",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Chief Compliance Officer",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 35,
+        "date_from": "2023-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Chief Compliance Officer at an independent Singapore fund manager. Sole compliance ownership: MAS CMS licensing, Accredited Investor onboarding, trade and risk oversight, VCC fund governance. Partner with investment team to enable growth. Open-architecture distribution of alternatives."
+      },
+      {
+        "title": "Compliance Manager",
+        "company_name": "Pinnacle Meridian Asset Mgmt",
+        "company_industry": "Asset Management",
+        "company_size": 80,
+        "date_from": "2017-01",
+        "date_to": "2023-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager covering CMS licensing and AI onboarding."
+      }
+    ],
+    "summary": "Chief Compliance Officer at an independent Singapore fund manager. Sole compliance ownership: MAS CMS licensing, Accredited Investor onboarding, trade and risk oversight, VCC fund governance. Partner with investment team to enable growth. Open-architecture distribution of alternatives.",
+    "title": "Chief Compliance Officer",
+    "headline": "Chief Compliance Officer",
+    "current_title": "Chief Compliance Officer",
+    "current_company": "Lioncross Investment Management",
+    "active_experience_company_name": "Lioncross Investment Management"
+  },
+  {
+    "id": 100004,
+    "name": "Daniel Menon",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100004",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "AML/CFT",
+      "Fund Governance",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance (Sole)",
+        "company_name": "Serangoon Capital Partners",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2019-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Sole compliance officer and CMS licence holder at a boutique independent asset manager. Built the compliance function from scratch. Own AI client onboarding under our own Capital Markets Services licence, MAS regulatory management, fund governance and Board reporting. Open-architecture third-party fund distribution (private credit, private equity, hedge funds) to Accredited Investors. VCC structures. Commercial business partner to the front office in a growth-mode firm."
+      },
+      {
+        "title": "Compliance Manager",
+        "company_name": "Orchard Bridge Capital",
+        "company_industry": "Asset Management",
+        "company_size": 80,
+        "date_from": "2013-01",
+        "date_to": "2019-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager covering CMS licensing and AI onboarding."
+      }
+    ],
+    "summary": "Sole compliance officer and CMS licence holder at a boutique independent asset manager. Built the compliance function from scratch. Own AI client onboarding under our own Capital Markets Services licence, MAS regulatory management, fund governance and Board reporting. Open-architecture third-party fund distribution (private credit, private equity, hedge funds) to Accredited Investors. VCC structures. Commercial business partner to the front office in a growth-mode firm.",
+    "title": "Head of Compliance (Sole)",
+    "headline": "Head of Compliance (Sole)",
+    "current_title": "Head of Compliance (Sole)",
+    "current_company": "Serangoon Capital Partners",
+    "active_experience_company_name": "Serangoon Capital Partners"
+  },
+  {
+    "id": 100005,
+    "name": "Sarah Lee",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100005",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "AML/CFT",
+      "Fund Governance",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Chief Compliance Officer",
+        "company_name": "Pinnacle Meridian Asset Mgmt",
+        "company_industry": "Investment Management",
+        "company_size": 35,
+        "date_from": "2023-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Chief Compliance Officer at an independent Singapore fund manager. Sole compliance ownership: MAS CMS licensing, Accredited Investor onboarding, trade and risk oversight, VCC fund governance. Partner with investment team to enable growth. Open-architecture distribution of alternatives."
+      },
+      {
+        "title": "Compliance Manager",
+        "company_name": "Maplewell Capital",
+        "company_industry": "Asset Management",
+        "company_size": 80,
+        "date_from": "2017-01",
+        "date_to": "2023-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager covering CMS licensing and AI onboarding."
+      }
+    ],
+    "summary": "Chief Compliance Officer at an independent Singapore fund manager. Sole compliance ownership: MAS CMS licensing, Accredited Investor onboarding, trade and risk oversight, VCC fund governance. Partner with investment team to enable growth. Open-architecture distribution of alternatives.",
+    "title": "Chief Compliance Officer",
+    "headline": "Chief Compliance Officer",
+    "current_title": "Chief Compliance Officer",
+    "current_company": "Pinnacle Meridian Asset Mgmt",
+    "active_experience_company_name": "Pinnacle Meridian Asset Mgmt"
+  },
+  {
+    "id": 100006,
+    "name": "Jun Nair",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100006",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "AML/CFT",
+      "Fund Governance",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance (Sole)",
+        "company_name": "Orchard Bridge Capital",
+        "company_industry": "Investment Management",
+        "company_size": 60,
+        "date_from": "2023-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Sole compliance officer and CMS licence holder at a boutique independent asset manager. Built the compliance function from scratch. Own AI client onboarding under our own Capital Markets Services licence, MAS regulatory management, fund governance and Board reporting. Open-architecture third-party fund distribution (private credit, private equity, hedge funds) to Accredited Investors. VCC structures. Commercial business partner to the front office in a growth-mode firm."
+      },
+      {
+        "title": "Compliance Manager",
+        "company_name": "Tanglin Asset Management",
+        "company_industry": "Asset Management",
+        "company_size": 80,
+        "date_from": "2017-01",
+        "date_to": "2023-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager covering CMS licensing and AI onboarding."
+      }
+    ],
+    "summary": "Sole compliance officer and CMS licence holder at a boutique independent asset manager. Built the compliance function from scratch. Own AI client onboarding under our own Capital Markets Services licence, MAS regulatory management, fund governance and Board reporting. Open-architecture third-party fund distribution (private credit, private equity, hedge funds) to Accredited Investors. VCC structures. Commercial business partner to the front office in a growth-mode firm.",
+    "title": "Head of Compliance (Sole)",
+    "headline": "Head of Compliance (Sole)",
+    "current_title": "Head of Compliance (Sole)",
+    "current_company": "Orchard Bridge Capital",
+    "active_experience_company_name": "Orchard Bridge Capital"
+  },
+  {
+    "id": 100007,
+    "name": "Li Koh",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100007",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "AML/CFT",
+      "Fund Governance",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Chief Compliance Officer",
+        "company_name": "Maplewell Capital",
+        "company_industry": "Investment Management",
+        "company_size": 35,
+        "date_from": "2022-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Chief Compliance Officer at an independent Singapore fund manager. Sole compliance ownership: MAS CMS licensing, Accredited Investor onboarding, trade and risk oversight, VCC fund governance. Partner with investment team to enable growth. Open-architecture distribution of alternatives."
+      },
+      {
+        "title": "Compliance Manager",
+        "company_name": "Keppel Straits Partners",
+        "company_industry": "Asset Management",
+        "company_size": 80,
+        "date_from": "2016-01",
+        "date_to": "2022-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager covering CMS licensing and AI onboarding."
+      }
+    ],
+    "summary": "Chief Compliance Officer at an independent Singapore fund manager. Sole compliance ownership: MAS CMS licensing, Accredited Investor onboarding, trade and risk oversight, VCC fund governance. Partner with investment team to enable growth. Open-architecture distribution of alternatives.",
+    "title": "Chief Compliance Officer",
+    "headline": "Chief Compliance Officer",
+    "current_title": "Chief Compliance Officer",
+    "current_company": "Maplewell Capital",
+    "active_experience_company_name": "Maplewell Capital"
+  },
+  {
+    "id": 100008,
+    "name": "Rajesh Rao",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100008",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "AML/CFT",
+      "Fund Governance",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance (Sole)",
+        "company_name": "Tanglin Asset Management",
+        "company_industry": "Investment Management",
+        "company_size": 60,
+        "date_from": "2019-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Sole compliance officer and CMS licence holder at a boutique independent asset manager. Built the compliance function from scratch. Own AI client onboarding under our own Capital Markets Services licence, MAS regulatory management, fund governance and Board reporting. Open-architecture third-party fund distribution (private credit, private equity, hedge funds) to Accredited Investors. VCC structures. Commercial business partner to the front office in a growth-mode firm."
+      },
+      {
+        "title": "Compliance Manager",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Asset Management",
+        "company_size": 80,
+        "date_from": "2013-01",
+        "date_to": "2019-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager covering CMS licensing and AI onboarding."
+      }
+    ],
+    "summary": "Sole compliance officer and CMS licence holder at a boutique independent asset manager. Built the compliance function from scratch. Own AI client onboarding under our own Capital Markets Services licence, MAS regulatory management, fund governance and Board reporting. Open-architecture third-party fund distribution (private credit, private equity, hedge funds) to Accredited Investors. VCC structures. Commercial business partner to the front office in a growth-mode firm.",
+    "title": "Head of Compliance (Sole)",
+    "headline": "Head of Compliance (Sole)",
+    "current_title": "Head of Compliance (Sole)",
+    "current_company": "Tanglin Asset Management",
+    "active_experience_company_name": "Tanglin Asset Management"
+  },
+  {
+    "id": 100009,
+    "name": "Aisha Sharma",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100009",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "AML/CFT",
+      "Fund Governance",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Chief Compliance Officer",
+        "company_name": "Keppel Straits Partners",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2019-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Chief Compliance Officer at an independent Singapore fund manager. Sole compliance ownership: MAS CMS licensing, Accredited Investor onboarding, trade and risk oversight, VCC fund governance. Partner with investment team to enable growth. Open-architecture distribution of alternatives."
+      },
+      {
+        "title": "Compliance Manager",
+        "company_name": "Serangoon Capital Partners",
+        "company_industry": "Asset Management",
+        "company_size": 80,
+        "date_from": "2013-01",
+        "date_to": "2019-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager covering CMS licensing and AI onboarding."
+      }
+    ],
+    "summary": "Chief Compliance Officer at an independent Singapore fund manager. Sole compliance ownership: MAS CMS licensing, Accredited Investor onboarding, trade and risk oversight, VCC fund governance. Partner with investment team to enable growth. Open-architecture distribution of alternatives.",
+    "title": "Chief Compliance Officer",
+    "headline": "Chief Compliance Officer",
+    "current_title": "Chief Compliance Officer",
+    "current_company": "Keppel Straits Partners",
+    "active_experience_company_name": "Keppel Straits Partners"
+  },
+  {
+    "id": 100010,
+    "name": "Marcus Pillai",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100010",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "AML/CFT",
+      "Fund Governance",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance (Sole)",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 120,
+        "date_from": "2022-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Sole compliance officer and CMS licence holder at a boutique independent asset manager. Built the compliance function from scratch. Own AI client onboarding under our own Capital Markets Services licence, MAS regulatory management, fund governance and Board reporting. Open-architecture third-party fund distribution (private credit, private equity, hedge funds) to Accredited Investors. VCC structures. Commercial business partner to the front office in a growth-mode firm."
+      },
+      {
+        "title": "Compliance Manager",
+        "company_name": "Pinnacle Meridian Asset Mgmt",
+        "company_industry": "Asset Management",
+        "company_size": 80,
+        "date_from": "2016-01",
+        "date_to": "2022-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager covering CMS licensing and AI onboarding."
+      }
+    ],
+    "summary": "Sole compliance officer and CMS licence holder at a boutique independent asset manager. Built the compliance function from scratch. Own AI client onboarding under our own Capital Markets Services licence, MAS regulatory management, fund governance and Board reporting. Open-architecture third-party fund distribution (private credit, private equity, hedge funds) to Accredited Investors. VCC structures. Commercial business partner to the front office in a growth-mode firm.",
+    "title": "Head of Compliance (Sole)",
+    "headline": "Head of Compliance (Sole)",
+    "current_title": "Head of Compliance (Sole)",
+    "current_company": "Lioncross Investment Management",
+    "active_experience_company_name": "Lioncross Investment Management"
+  },
+  {
+    "id": 100011,
+    "name": "Grace Sim",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100011",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "AML/CFT",
+      "Fund Governance",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Chief Compliance Officer",
+        "company_name": "Serangoon Capital Partners",
+        "company_industry": "Investment Management",
+        "company_size": 90,
+        "date_from": "2019-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Chief Compliance Officer at an independent Singapore fund manager. Sole compliance ownership: MAS CMS licensing, Accredited Investor onboarding, trade and risk oversight, VCC fund governance. Partner with investment team to enable growth. Open-architecture distribution of alternatives."
+      },
+      {
+        "title": "Compliance Manager",
+        "company_name": "Orchard Bridge Capital",
+        "company_industry": "Asset Management",
+        "company_size": 80,
+        "date_from": "2013-01",
+        "date_to": "2019-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager covering CMS licensing and AI onboarding."
+      }
+    ],
+    "summary": "Chief Compliance Officer at an independent Singapore fund manager. Sole compliance ownership: MAS CMS licensing, Accredited Investor onboarding, trade and risk oversight, VCC fund governance. Partner with investment team to enable growth. Open-architecture distribution of alternatives.",
+    "title": "Chief Compliance Officer",
+    "headline": "Chief Compliance Officer",
+    "current_title": "Chief Compliance Officer",
+    "current_company": "Serangoon Capital Partners",
+    "active_experience_company_name": "Serangoon Capital Partners"
+  },
+  {
+    "id": 100012,
+    "name": "Kumar Wong",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100012",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "KYC",
+      "AML",
+      "Suitability"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Officer",
+        "company_name": "DBS Bank",
+        "company_industry": "Banking",
+        "company_size": 1500,
+        "date_from": "2018-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25."
+      }
+    ],
+    "summary": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25.",
+    "title": "Compliance Officer",
+    "headline": "Compliance Officer",
+    "current_title": "Compliance Officer",
+    "current_company": "DBS Bank",
+    "active_experience_company_name": "DBS Bank"
+  },
+  {
+    "id": 100013,
+    "name": "Hui Teo",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100013",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "FAA",
+      "Retail Distribution"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance",
+        "company_name": "iWealth Advisers",
+        "company_industry": "Financial Services",
+        "company_size": 8000,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing."
+      }
+    ],
+    "summary": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing.",
+    "title": "Head of Compliance",
+    "headline": "Head of Compliance",
+    "current_title": "Head of Compliance",
+    "current_company": "iWealth Advisers",
+    "active_experience_company_name": "iWealth Advisers"
+  },
+  {
+    "id": 100014,
+    "name": "Benjamin Das",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100014",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "KYC",
+      "AML",
+      "Suitability"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Officer",
+        "company_name": "UOB",
+        "company_industry": "Banking",
+        "company_size": 1500,
+        "date_from": "2016-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25."
+      }
+    ],
+    "summary": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25.",
+    "title": "Compliance Officer",
+    "headline": "Compliance Officer",
+    "current_title": "Compliance Officer",
+    "current_company": "UOB",
+    "active_experience_company_name": "UOB"
+  },
+  {
+    "id": 100015,
+    "name": "Natalie Ng",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100015",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "FAA",
+      "Retail Distribution"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance",
+        "company_name": "iWealth Advisers",
+        "company_industry": "Financial Services",
+        "company_size": 8000,
+        "date_from": "2017-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing."
+      }
+    ],
+    "summary": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing.",
+    "title": "Head of Compliance",
+    "headline": "Head of Compliance",
+    "current_title": "Head of Compliance",
+    "current_company": "iWealth Advisers",
+    "active_experience_company_name": "iWealth Advisers"
+  },
+  {
+    "id": 100016,
+    "name": "Ravi Reddy",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100016",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "KYC",
+      "AML",
+      "Suitability"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Officer",
+        "company_name": "Citi",
+        "company_industry": "Banking",
+        "company_size": 1500,
+        "date_from": "2018-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25."
+      }
+    ],
+    "summary": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25.",
+    "title": "Compliance Officer",
+    "headline": "Compliance Officer",
+    "current_title": "Compliance Officer",
+    "current_company": "Citi",
+    "active_experience_company_name": "Citi"
+  },
+  {
+    "id": 100017,
+    "name": "Joanne Chan",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100017",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "FAA",
+      "Retail Distribution"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance",
+        "company_name": "iWealth Advisers",
+        "company_industry": "Financial Services",
+        "company_size": 1500,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing."
+      }
+    ],
+    "summary": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing.",
+    "title": "Head of Compliance",
+    "headline": "Head of Compliance",
+    "current_title": "Head of Compliance",
+    "current_company": "iWealth Advisers",
+    "active_experience_company_name": "iWealth Advisers"
+  },
+  {
+    "id": 100018,
+    "name": "Terence Goh",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100018",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "KYC",
+      "AML",
+      "Suitability"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Officer",
+        "company_name": "DBS Bank",
+        "company_industry": "Banking",
+        "company_size": 8000,
+        "date_from": "2016-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25."
+      }
+    ],
+    "summary": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25.",
+    "title": "Compliance Officer",
+    "headline": "Compliance Officer",
+    "current_title": "Compliance Officer",
+    "current_company": "DBS Bank",
+    "active_experience_company_name": "DBS Bank"
+  },
+  {
+    "id": 100019,
+    "name": "Shanti Ong",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100019",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "FAA",
+      "Retail Distribution"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance",
+        "company_name": "iWealth Advisers",
+        "company_industry": "Financial Services",
+        "company_size": 8000,
+        "date_from": "2011-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing."
+      }
+    ],
+    "summary": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing.",
+    "title": "Head of Compliance",
+    "headline": "Head of Compliance",
+    "current_title": "Head of Compliance",
+    "current_company": "iWealth Advisers",
+    "active_experience_company_name": "iWealth Advisers"
+  },
+  {
+    "id": 100020,
+    "name": "Cheryl Tan",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100020",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "KYC",
+      "AML",
+      "Suitability"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Officer",
+        "company_name": "UOB",
+        "company_industry": "Banking",
+        "company_size": 20000,
+        "date_from": "2018-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25."
+      }
+    ],
+    "summary": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25.",
+    "title": "Compliance Officer",
+    "headline": "Compliance Officer",
+    "current_title": "Compliance Officer",
+    "current_company": "UOB",
+    "active_experience_company_name": "UOB"
+  },
+  {
+    "id": 100021,
+    "name": "Vikram Chua",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100021",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "FAA",
+      "Retail Distribution"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance",
+        "company_name": "iWealth Advisers",
+        "company_industry": "Financial Services",
+        "company_size": 20000,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing."
+      }
+    ],
+    "summary": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing.",
+    "title": "Head of Compliance",
+    "headline": "Head of Compliance",
+    "current_title": "Head of Compliance",
+    "current_company": "iWealth Advisers",
+    "active_experience_company_name": "iWealth Advisers"
+  },
+  {
+    "id": 100022,
+    "name": "Faizal Iyer",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100022",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "KYC",
+      "AML",
+      "Suitability"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Officer",
+        "company_name": "Citi",
+        "company_industry": "Banking",
+        "company_size": 8000,
+        "date_from": "2018-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25."
+      }
+    ],
+    "summary": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25.",
+    "title": "Compliance Officer",
+    "headline": "Compliance Officer",
+    "current_title": "Compliance Officer",
+    "current_company": "Citi",
+    "active_experience_company_name": "Citi"
+  },
+  {
+    "id": 100023,
+    "name": "Yong Lim",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100023",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "FAA",
+      "Retail Distribution"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance",
+        "company_name": "iWealth Advisers",
+        "company_industry": "Financial Services",
+        "company_size": 20000,
+        "date_from": "2018-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing."
+      }
+    ],
+    "summary": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing.",
+    "title": "Head of Compliance",
+    "headline": "Head of Compliance",
+    "current_title": "Head of Compliance",
+    "current_company": "iWealth Advisers",
+    "active_experience_company_name": "iWealth Advisers"
+  },
+  {
+    "id": 100024,
+    "name": "Wei Menon",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100024",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "KYC",
+      "AML",
+      "Suitability"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Officer",
+        "company_name": "DBS Bank",
+        "company_industry": "Banking",
+        "company_size": 20000,
+        "date_from": "2016-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25."
+      }
+    ],
+    "summary": "Compliance officer within the private banking division. Wealth management compliance, suitability, KYC/AML. Part of a compliance team of 25.",
+    "title": "Compliance Officer",
+    "headline": "Compliance Officer",
+    "current_title": "Compliance Officer",
+    "current_company": "DBS Bank",
+    "active_experience_company_name": "DBS Bank"
+  },
+  {
+    "id": 100025,
+    "name": "Mei Lee",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100025",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "FAA",
+      "Retail Distribution"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance",
+        "company_name": "iWealth Advisers",
+        "company_industry": "Financial Services",
+        "company_size": 8000,
+        "date_from": "2011-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing."
+      }
+    ],
+    "summary": "Head of compliance at a retail IFA distribution platform. Retail and IFA distribution only. MAS FAA licensing.",
+    "title": "Head of Compliance",
+    "headline": "Head of Compliance",
+    "current_title": "Head of Compliance",
+    "current_company": "iWealth Advisers",
+    "active_experience_company_name": "iWealth Advisers"
+  },
+  {
+    "id": 100026,
+    "name": "Arjun Nair",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100026",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Advisory"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Advisory Manager",
+        "company_name": "Deloitte",
+        "company_industry": "Management Consulting",
+        "company_size": 25000,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Regulatory compliance advisory consultant. Advise asset managers on MAS licensing applications. Big 4 advisory only, no in-house seat."
+      }
+    ],
+    "summary": "Regulatory compliance advisory consultant. Advise asset managers on MAS licensing applications. Big 4 advisory only, no in-house seat.",
+    "title": "Compliance Advisory Manager",
+    "headline": "Compliance Advisory Manager",
+    "current_title": "Compliance Advisory Manager",
+    "current_company": "Deloitte",
+    "active_experience_company_name": "Deloitte"
+  },
+  {
+    "id": 100027,
+    "name": "Priya Koh",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100027",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Advisory"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Advisory Manager",
+        "company_name": "PwC",
+        "company_industry": "Management Consulting",
+        "company_size": 25000,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Regulatory compliance advisory consultant. Advise asset managers on MAS licensing applications. Big 4 advisory only, no in-house seat."
+      }
+    ],
+    "summary": "Regulatory compliance advisory consultant. Advise asset managers on MAS licensing applications. Big 4 advisory only, no in-house seat.",
+    "title": "Compliance Advisory Manager",
+    "headline": "Compliance Advisory Manager",
+    "current_title": "Compliance Advisory Manager",
+    "current_company": "PwC",
+    "active_experience_company_name": "PwC"
+  },
+  {
+    "id": 100028,
+    "name": "Daniel Rao",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100028",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Advisory"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Advisory Manager",
+        "company_name": "KPMG",
+        "company_industry": "Management Consulting",
+        "company_size": 25000,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Regulatory compliance advisory consultant. Advise asset managers on MAS licensing applications. Big 4 advisory only, no in-house seat."
+      }
+    ],
+    "summary": "Regulatory compliance advisory consultant. Advise asset managers on MAS licensing applications. Big 4 advisory only, no in-house seat.",
+    "title": "Compliance Advisory Manager",
+    "headline": "Compliance Advisory Manager",
+    "current_title": "Compliance Advisory Manager",
+    "current_company": "KPMG",
+    "active_experience_company_name": "KPMG"
+  },
+  {
+    "id": 100029,
+    "name": "Sarah Sharma",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100029",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Advisory"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Advisory Manager",
+        "company_name": "Ernst & Young",
+        "company_industry": "Management Consulting",
+        "company_size": 25000,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Regulatory compliance advisory consultant. Advise asset managers on MAS licensing applications. Big 4 advisory only, no in-house seat."
+      }
+    ],
+    "summary": "Regulatory compliance advisory consultant. Advise asset managers on MAS licensing applications. Big 4 advisory only, no in-house seat.",
+    "title": "Compliance Advisory Manager",
+    "headline": "Compliance Advisory Manager",
+    "current_title": "Compliance Advisory Manager",
+    "current_company": "Ernst & Young",
+    "active_experience_company_name": "Ernst & Young"
+  },
+  {
+    "id": 100030,
+    "name": "Jun Pillai",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100030",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Supervision"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Assistant Director",
+        "company_name": "Monetary Authority of Singapore",
+        "company_industry": "Government Administration",
+        "company_size": 4000,
+        "date_from": "2012-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Assistant Director, Capital Markets Intermediaries Department."
+      }
+    ],
+    "summary": "Assistant Director, Capital Markets Intermediaries Department.",
+    "title": "Assistant Director",
+    "headline": "Assistant Director",
+    "current_title": "Assistant Director",
+    "current_company": "Monetary Authority of Singapore",
+    "active_experience_company_name": "Monetary Authority of Singapore"
+  },
+  {
+    "id": 100031,
+    "name": "Li Sim",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100031",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Supervision"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Assistant Director",
+        "company_name": "Monetary Authority of Singapore",
+        "company_industry": "Government Administration",
+        "company_size": 4000,
+        "date_from": "2012-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Assistant Director, Capital Markets Intermediaries Department."
+      }
+    ],
+    "summary": "Assistant Director, Capital Markets Intermediaries Department.",
+    "title": "Assistant Director",
+    "headline": "Assistant Director",
+    "current_title": "Assistant Director",
+    "current_company": "Monetary Authority of Singapore",
+    "active_experience_company_name": "Monetary Authority of Singapore"
+  },
+  {
+    "id": 100032,
+    "name": "Rajesh Wong",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100032",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance",
+        "company_name": "Maplewell Capital",
+        "company_industry": "Investment Management",
+        "company_size": 70,
+        "date_from": "2020-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Ex-MAS supervisor now Head of Compliance at an independent asset manager. CMS licence, Accredited Investor onboarding, VCC governance."
+      },
+      {
+        "title": "Deputy Director",
+        "company_name": "Monetary Authority of Singapore",
+        "company_industry": "Government Administration",
+        "company_size": 4000,
+        "date_from": "2010-01",
+        "date_to": "2020-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Supervised CMS licensees."
+      }
+    ],
+    "summary": "Ex-MAS supervisor now Head of Compliance at an independent asset manager. CMS licence, Accredited Investor onboarding, VCC governance.",
+    "title": "Head of Compliance",
+    "headline": "Head of Compliance",
+    "current_title": "Head of Compliance",
+    "current_company": "Maplewell Capital",
+    "active_experience_company_name": "Maplewell Capital"
+  },
+  {
+    "id": 100033,
+    "name": "Aisha Teo",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100033",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "MAS",
+      "CMS Licensing",
+      "VCC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance",
+        "company_name": "Tanglin Asset Management",
+        "company_industry": "Investment Management",
+        "company_size": 70,
+        "date_from": "2020-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Ex-MAS supervisor now Head of Compliance at an independent asset manager. CMS licence, Accredited Investor onboarding, VCC governance."
+      },
+      {
+        "title": "Deputy Director",
+        "company_name": "Monetary Authority of Singapore",
+        "company_industry": "Government Administration",
+        "company_size": 4000,
+        "date_from": "2010-01",
+        "date_to": "2020-12",
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Supervised CMS licensees."
+      }
+    ],
+    "summary": "Ex-MAS supervisor now Head of Compliance at an independent asset manager. CMS licence, Accredited Investor onboarding, VCC governance.",
+    "title": "Head of Compliance",
+    "headline": "Head of Compliance",
+    "current_title": "Head of Compliance",
+    "current_company": "Tanglin Asset Management",
+    "active_experience_company_name": "Tanglin Asset Management"
+  },
+  {
+    "id": 100034,
+    "name": "Marcus Das",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100034",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "AML"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Analyst",
+        "company_name": "Maplewell Capital",
+        "company_industry": "Asset Management",
+        "company_size": 60,
+        "date_from": "2023-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance analyst supporting the AML team."
+      }
+    ],
+    "summary": "Compliance analyst supporting the AML team.",
+    "title": "Compliance Analyst",
+    "headline": "Compliance Analyst",
+    "current_title": "Compliance Analyst",
+    "current_company": "Maplewell Capital",
+    "active_experience_company_name": "Maplewell Capital"
+  },
+  {
+    "id": 100035,
+    "name": "Grace Ng",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100035",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "AML"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Analyst",
+        "company_name": "Tanglin Asset Management",
+        "company_industry": "Asset Management",
+        "company_size": 60,
+        "date_from": "2023-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance analyst supporting the AML team."
+      }
+    ],
+    "summary": "Compliance analyst supporting the AML team.",
+    "title": "Compliance Analyst",
+    "headline": "Compliance Analyst",
+    "current_title": "Compliance Analyst",
+    "current_company": "Tanglin Asset Management",
+    "active_experience_company_name": "Tanglin Asset Management"
+  },
+  {
+    "id": 100036,
+    "name": "Kumar Reddy",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100036",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Insurance"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Manager",
+        "company_name": "Great Eastern",
+        "company_industry": "Insurance",
+        "company_size": 6000,
+        "date_from": "2015-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager, life insurance product governance."
+      }
+    ],
+    "summary": "Compliance manager, life insurance product governance.",
+    "title": "Compliance Manager",
+    "headline": "Compliance Manager",
+    "current_title": "Compliance Manager",
+    "current_company": "Great Eastern",
+    "active_experience_company_name": "Great Eastern"
+  },
+  {
+    "id": 100037,
+    "name": "Hui Chan",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100037",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [
+      "Insurance"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Compliance Manager",
+        "company_name": "Prudential Singapore",
+        "company_industry": "Insurance",
+        "company_size": 6000,
+        "date_from": "2015-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": "Compliance manager, life insurance product governance."
+      }
+    ],
+    "summary": "Compliance manager, life insurance product governance.",
+    "title": "Compliance Manager",
+    "headline": "Compliance Manager",
+    "current_title": "Compliance Manager",
+    "current_company": "Prudential Singapore",
+    "active_experience_company_name": "Prudential Singapore"
+  },
+  {
+    "id": 100038,
+    "name": "Benjamin Goh",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100038",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [],
+    "education": [],
+    "experience": [
+      {
+        "title": "Chief Compliance Officer",
+        "company_name": "Lioncross Investment Management",
+        "company_industry": "Investment Management",
+        "company_size": 50,
+        "date_from": "2016-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": ""
+      }
+    ],
+    "summary": "",
+    "title": "Chief Compliance Officer",
+    "headline": "Chief Compliance Officer",
+    "current_title": "Chief Compliance Officer",
+    "current_company": "Lioncross Investment Management",
+    "active_experience_company_name": "Lioncross Investment Management"
+  },
+  {
+    "id": 100039,
+    "name": "Natalie Ong",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100039",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [],
+    "education": [],
+    "experience": [
+      {
+        "title": "Chief Compliance Officer",
+        "company_name": "Serangoon Capital Partners",
+        "company_industry": "Investment Management",
+        "company_size": 50,
+        "date_from": "2016-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": ""
+      }
+    ],
+    "summary": "",
+    "title": "Chief Compliance Officer",
+    "headline": "Chief Compliance Officer",
+    "current_title": "Chief Compliance Officer",
+    "current_company": "Serangoon Capital Partners",
+    "active_experience_company_name": "Serangoon Capital Partners"
+  },
+  {
+    "id": 100040,
+    "name": "Ravi Tan",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100040",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [],
+    "education": [],
+    "experience": [
+      {
+        "title": "Chief Compliance Officer",
+        "company_name": "Pinnacle Meridian Asset Mgmt",
+        "company_industry": "Investment Management",
+        "company_size": 50,
+        "date_from": "2016-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": ""
+      }
+    ],
+    "summary": "",
+    "title": "Chief Compliance Officer",
+    "headline": "Chief Compliance Officer",
+    "current_title": "Chief Compliance Officer",
+    "current_company": "Pinnacle Meridian Asset Mgmt",
+    "active_experience_company_name": "Pinnacle Meridian Asset Mgmt"
+  },
+  {
+    "id": 100041,
+    "name": "Joanne Chua",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100041",
+    "location_country": "Singapore",
+    "active_experience": true,
+    "skills": [],
+    "education": [],
+    "experience": [
+      {
+        "title": "Chief Compliance Officer",
+        "company_name": "Orchard Bridge Capital",
+        "company_industry": "Investment Management",
+        "company_size": 50,
+        "date_from": "2016-01",
+        "date_to": null,
+        "location": "Singapore",
+        "company_location": "Singapore",
+        "description": ""
+      }
+    ],
+    "summary": "",
+    "title": "Chief Compliance Officer",
+    "headline": "Chief Compliance Officer",
+    "current_title": "Chief Compliance Officer",
+    "current_company": "Orchard Bridge Capital",
+    "active_experience_company_name": "Orchard Bridge Capital"
+  },
+  {
+    "id": 100042,
+    "name": "Terence Iyer",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100042",
+    "location_country": "Hong Kong",
+    "active_experience": true,
+    "skills": [
+      "SFC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance",
+        "company_name": "Hong Kong Asset Mgmt",
+        "company_industry": "Investment Management",
+        "company_size": 80,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Hong Kong",
+        "company_location": "Hong Kong",
+        "description": "CMS-equivalent compliance, SFC licensed."
+      }
+    ],
+    "summary": "SFC compliance.",
+    "title": "Head of Compliance",
+    "headline": "Head of Compliance",
+    "current_title": "Head of Compliance",
+    "current_company": "Hong Kong Asset Mgmt",
+    "active_experience_company_name": "Hong Kong Asset Mgmt"
+  },
+  {
+    "id": 100043,
+    "name": "Shanti Lim",
+    "linkedin_url": "https://www.linkedin.com/in/synthetic-100043",
+    "location_country": "Hong Kong",
+    "active_experience": true,
+    "skills": [
+      "SFC"
+    ],
+    "education": [
+      {
+        "title": "National University of Singapore",
+        "subtitle": "Law"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Head of Compliance",
+        "company_name": "Hong Kong Asset Mgmt",
+        "company_industry": "Investment Management",
+        "company_size": 80,
+        "date_from": "2014-01",
+        "date_to": null,
+        "location": "Hong Kong",
+        "company_location": "Hong Kong",
+        "description": "CMS-equivalent compliance, SFC licensed."
+      }
+    ],
+    "summary": "SFC compliance.",
+    "title": "Head of Compliance",
+    "headline": "Head of Compliance",
+    "current_title": "Head of Compliance",
+    "current_company": "Hong Kong Asset Mgmt",
+    "active_experience_company_name": "Hong Kong Asset Mgmt"
+  }
+]

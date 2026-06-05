@@ -1,0 +1,21 @@
+# secrets
+.env
+*/.env
+**/.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# generated test scratch
+**/deliverables/_test_run*/
+
+# os
+.DS_Store
+
+# keep generated demo deliverables committed (they ARE part of the submission),
+# but ignore the scratch test outputs above.

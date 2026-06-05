@@ -1,0 +1,13 @@
+{
+  "provider": "mock",
+  "recipients": 5,
+  "sparse": 2,
+  "with_grounding_flags": 0,
+  "outputs": [
+    "outputs/R1_Marcus_Lim.md",
+    "outputs/R2_Anita_Raghavan.md",
+    "outputs/R3_David_Chen.md",
+    "outputs/R4_Priya_Nair.md",
+    "outputs/R5_Jonathan_Tan.md"
+  ]
+}

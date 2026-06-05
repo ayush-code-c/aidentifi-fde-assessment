@@ -1,0 +1,12 @@
+# Core (required)
+PyYAML>=6.0
+openpyxl>=3.1
+
+# Live mode (Coresignal) + .env support
+requests>=2.31
+python-dotenv>=1.0
+
+# LLM rubric pass — install ONE depending on JATAYU_LLM_PROVIDER.
+# Neither is required for the default deterministic "mock" provider.
+anthropic>=0.40 ; extra == "anthropic"
+openai>=1.40 ; extra == "openai"
