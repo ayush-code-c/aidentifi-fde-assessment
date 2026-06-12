@@ -5,7 +5,7 @@ and one diagnostic essay. Everything runs end-to-end **with no external accounts
 (offline/mock modes); switching to live data is a `.env` change, documented per
 tool.
 
-**Executed Q1 mandate:** Mandate A — Sole Compliance Officer, Singapore Asset
+**Executed Q1 mandate:** Mandate A: Sole Compliance Officer, Singapore Asset
 Manager. (Rationale + Mandate B migration included.)
 
 ---
