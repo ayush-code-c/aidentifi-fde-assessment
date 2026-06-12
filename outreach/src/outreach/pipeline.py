@@ -2,7 +2,7 @@
 
 Emits one outreach file per recipient plus a run summary. Every output carries a
 transparent footer: the angle chosen, the personalization basis (which hooks),
-whether the profile was treated as sparse, and any grounding flags — so a
+whether the profile was treated as sparse, and any grounding flags - so a
 reviewer sees the reasoning, not just the prose.
 """
 from __future__ import annotations
@@ -129,7 +129,7 @@ def run(recipients_path, positioning_path, out_dir, settings: Settings | None = 
         flags = check_grounding(msg, r, brief.approved_hooks)
 
         confidence_note = (
-            "SPARSE profile — message kept category-level; specifics intentionally "
+            "SPARSE profile - message kept category-level; specifics intentionally "
             "omitted. Verify before sending." if is_sparse
             else "Personalised from confirmed hooks."
         )
@@ -160,11 +160,11 @@ def run(recipients_path, positioning_path, out_dir, settings: Settings | None = 
 def _write_md(out_dir: Path, r: Recipient, res: OutreachResult, channel: str) -> None:
     path = out_dir / f"{r.id}_{r.name.replace(' ', '_')}.md"
     flags = "\n".join(f"  - ⚠️ {f}" for f in res.grounding_flags) or "  - none"
-    basis = "\n".join(f"  - {b}" for b in res.personalization_basis) or "  - (none — sparse)"
+    basis = "\n".join(f"  - {b}" for b in res.personalization_basis) or "  - (none - sparse)"
     dropped = "\n".join(f"  - {d}" for d in res.dropped_low_conf_hooks) or "  - none"
-    md = f"""# Outreach — {r.name} ({r.title}{', ' + r.company if r.has_company else ''})
+    md = f"""# Outreach - {r.name} ({r.title}{', ' + r.company if r.has_company else ''})
 
-**Channel:** {channel}  |  **Angle:** `{res.angle}` — {res.angle_reason}
+**Channel:** {channel}  |  **Angle:** `{res.angle}` - {res.angle_reason}
 **Profile:** {'SPARSE ⚠️' if res.is_sparse else 'rich'}  |  {res.confidence_note}
 
 ---

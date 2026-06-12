@@ -2,7 +2,7 @@
 
 Examples
 --------
-# offline demo (no keys, no credits) — produces every deliverable from fixtures
+# offline demo (no keys, no credits) - produces every deliverable from fixtures
 python -m jatayu run --mandate config/mandate_a_compliance_sg.yaml \
     --out deliverables/mandate_a
 
@@ -52,6 +52,7 @@ def main(argv=None) -> int:
         settings = Settings()
         if args.mode:
             settings.mode = args.mode
+        settings.autoselect_fixtures(cfg)
         ledger = CreditLedger()
         client = make_client(settings, ledger, stage="dev")
         result = client.preview(cfg["filter"], purpose="dev:filter-validation")

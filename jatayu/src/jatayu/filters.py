@@ -3,9 +3,9 @@
 Coresignal's clean "Employee/Member" search API accepts an ES bool query. We
 translate the declarative `filter:` block of the mandate YAML into that DSL.
 Keeping this in one place means a recruiter changing the mandate never has to
-understand Elasticsearch — they edit YAML, we compile.
+understand Elasticsearch - they edit YAML, we compile.
 
-The same builder also exposes `local_predicate()` — the identical filter logic
+The same builder also exposes `local_predicate()` - the identical filter logic
 applied in-process to fixtures in offline mode, so offline and live runs select
 the same candidates.
 """

@@ -1,6 +1,6 @@
-# Outreach — David Chen (Chief Operating Officer, Tanglin Asset Management)
+# Outreach - David Chen (Chief Operating Officer, Tanglin Asset Management)
 
-**Channel:** email  |  **Angle:** `hard_to_fill_niche` — owns a niche/regulated senior function
+**Channel:** email  |  **Angle:** `hard_to_fill_niche` - owns a niche/regulated senior function
 **Profile:** rich  |  Personalised from confirmed hooks.
 
 ---
@@ -9,7 +9,7 @@
 
 Hi David,
 
-COO of an independent SGD ~600M asset manager — that's exactly the kind of moment we're built for. AI-native executive search — engineering-built sourcing that produces sharper senior shortlists, faster, than traditional retained search.
+COO of an independent SGD ~600M asset manager - that's exactly the kind of moment we're built for. AI-native executive search - engineering-built sourcing that produces sharper senior shortlists, faster, than traditional retained search.
 
 Niche senior roles fail on calibration, not effort; our sourcing is built for exactly that fit problem.
 

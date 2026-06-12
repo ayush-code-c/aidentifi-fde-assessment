@@ -1,4 +1,4 @@
-"""Credit ledger — every credit-bearing Coresignal call is recorded here.
+"""Credit ledger - every credit-bearing Coresignal call is recorded here.
 
 The ledger is the single source of truth for the credit-log deliverable and for
 per-candidate credit attribution in the final Excel. Discipline is graded, so
@@ -22,7 +22,7 @@ class CreditEntry:
     stage_purpose: str          # e.g. "dev:filter-validation", "prod:enrich"
     useful_yes_no: str          # self-rated: "yes" / "no" / "partial"
     notes: str
-    stage: str = "production"   # "dev" or "production" — splits the two sheets
+    stage: str = "production"   # "dev" or "production" - splits the two sheets
     profile_id: str = ""        # for per-candidate attribution
 
 

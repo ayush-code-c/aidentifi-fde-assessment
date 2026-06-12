@@ -3,7 +3,7 @@
 Send a single email to **shashank@aidentifi.com** by the deadline (7 days from
 kickoff, 23:59 SGT) with the Git repo URL and all deliverables linked/attached.
 
-## Before you send — do these (the human-in-the-loop items)
+## Before you send - do these (the human-in-the-loop items)
 
 - [ ] **Live Coresignal pull (Q1).** Get the 300-credit trial. Set
       `CORESIGNAL_API_KEY` and `JATAYU_MODE=live` in `jatayu/.env`. Run the dev
@@ -22,17 +22,17 @@ kickoff, 23:59 SGT) with the Git repo URL and all deliverables linked/attached.
 ## Deliverables to link in the email
 
 - [ ] Git repo URL
-- [ ] Q1 — Jatayu README + architecture doc
-- [ ] Q1 — top-10 Excel shortlist
-- [ ] Q1 — raw production pull CSV (filter-precision audit)
-- [ ] Q1 — scoring intermediate CSV
-- [ ] Q1 — credit log CSV (dev + production)
-- [ ] Q1 — Loom 1 link: ____________________
-- [ ] Q1b — config migration document
-- [ ] Q2 — outreach repo + 5 outputs + architecture doc
-- [ ] Q2 — Loom 2 link: ____________________
-- [ ] Q3 — improvement roadmap
-- [ ] Q4 — Company Brain
+- [ ] Q1 - Jatayu README + architecture doc
+- [ ] Q1 - top-10 Excel shortlist
+- [ ] Q1 - raw production pull CSV (filter-precision audit)
+- [ ] Q1 - scoring intermediate CSV
+- [ ] Q1 - credit log CSV (dev + production)
+- [ ] Q1 - Loom 1 link: ____________________
+- [ ] Q1b - config migration document
+- [ ] Q2 - outreach repo + 5 outputs + architecture doc
+- [ ] Q2 - Loom 2 link: ____________________
+- [ ] Q3 - improvement roadmap
+- [ ] Q4 - Company Brain
 
 ## Clarifying questions (brief allows up to 5 in first 48h)
 
@@ -44,13 +44,13 @@ If you want to use them, the highest-value ones to ask Aidentifi:
 3. Confirm the exact Coresignal product/endpoint they expect (clean Employee API,
    bulk download) and any account quirks.
 
-If unanswered, the repo documents its assumptions and proceeds — as the brief
+If unanswered, the repo documents its assumptions and proceeds - as the brief
 instructs after 48h.
 
 ## Honest "what I cut" note (brief invites this)
 
 State plainly in the email what is offline-only vs live-run, and that the Looms +
 live pull were done by you on top of the delivered system. The brief explicitly
-prefers a complete Q1 with thoughtful Q1b over a rushed pass at everything — this
+prefers a complete Q1 with thoughtful Q1b over a rushed pass at everything - this
 submission completes all five, with the live data pull and Looms as the
 final human steps.

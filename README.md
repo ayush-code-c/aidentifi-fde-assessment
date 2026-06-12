@@ -17,7 +17,7 @@ Manager. (Rationale + Mandate B migration included.)
 | **Q1** | 40% | Jatayu sourcing & ranking tool (config-driven, README) | [`jatayu/`](jatayu/) |
 | | | ↳ Architecture doc (+ Mandate Selection Rationale) | [`jatayu/docs/architecture.md`](jatayu/docs/architecture.md) |
 | | | ↳ Top-10 shortlist (Excel, exact columns) | [`jatayu/deliverables/mandate_a/top10_shortlist.xlsx`](jatayu/deliverables/mandate_a/) |
-| | | ↳ Raw production pull (CSV — the filter-precision audit file) | `jatayu/deliverables/mandate_a/raw_production_pull.csv` |
+| | | ↳ Raw production pull (CSV - the filter-precision audit file) | `jatayu/deliverables/mandate_a/raw_production_pull.csv` |
 | | | ↳ Scoring intermediate (CSV) | `jatayu/deliverables/mandate_a/scoring_intermediate.csv` |
 | | | ↳ Credit log (CSV, dev + production sheets) | `jatayu/deliverables/mandate_a/credit_log_*.csv` |
 | **Q1b** | 15% | Configuration Migration Document (→ Mandate B) | [`jatayu/docs/q1b_config_migration.md`](jatayu/docs/q1b_config_migration.md) |
@@ -25,17 +25,17 @@ Manager. (Rationale + Mandate B migration included.)
 | | | ↳ Architecture doc (+ scalability story) | [`outreach/docs/architecture.md`](outreach/docs/architecture.md) |
 | **Q3** | 10% | Improvement roadmap (2 pages, $ + weeks) | [`docs/Q3_improvement_roadmap.md`](docs/Q3_improvement_roadmap.md) |
 | **Q4** | 15% | Company Brain (2 pages) | [`docs/Q4_company_brain.md`](docs/Q4_company_brain.md) |
-| — | — | Loom recording scripts (shot-by-shot) | [`LOOM_SCRIPTS.md`](LOOM_SCRIPTS.md) |
-| — | — | Submission checklist | [`SUBMISSION_CHECKLIST.md`](SUBMISSION_CHECKLIST.md) |
+| - | - | Loom recording scripts (shot-by-shot) | [`LOOM_SCRIPTS.md`](LOOM_SCRIPTS.md) |
+| - | - | Submission checklist | [`SUBMISSION_CHECKLIST.md`](SUBMISSION_CHECKLIST.md) |
 
 ## Run both tools in two minutes (no keys)
 
 ```bash
-# Q1 — Jatayu
+# Q1 - Jatayu
 cd jatayu && pip install -r requirements.txt && export PYTHONPATH=src
 python -m jatayu run --mandate config/mandate_a_compliance_sg.yaml --out deliverables/mandate_a
 
-# Q2 — Outreach
+# Q2 - Outreach
 cd ../outreach && pip install -r requirements.txt && export PYTHONPATH=src
 python -m outreach run --recipients data/recipients.csv \
   --positioning config/aidentifi_positioning.yaml --out outputs
@@ -58,7 +58,7 @@ explicit so nothing is mistaken for done:
   shaped fixtures** so the repo runs anywhere at **0 credits**.
 - The deterministic-mock LLM makes every run reproducible with no API key.
 
-**Needs you — and exactly how to do it**
+**Needs you - and exactly how to do it**
 1. **The live Coresignal production pull.** The committed Q1 deliverables use
    synthetic data, so `credits_spent_on_this_candidate` is 0 in the committed
    copy. To produce the *real* filter-precision pull the brief audits: get your
@@ -71,7 +71,7 @@ explicit so nothing is mistaken for done:
    the credit meter on screen; one outreach recipient end-to-end).
 3. **Real outreach recipients.** `outreach/data/recipients.csv` ships realistic
    synthetic stand-ins (2 deliberately sparse). Swap in 5 real people sourced
-   legally from your own access; no code changes — it's pure data.
+   legally from your own access; no code changes - it's pure data.
 
 **Why this split is honest, not a shortcut:** the brief says "we evaluate the
 systems you build more heavily than the outputs they produce." The system is

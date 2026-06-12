@@ -1,7 +1,7 @@
 # Outreach Generator (Q2)
 
 Generates personalised BD outreach to senior decision-makers Aidentifi might want
-to start conversations with — grounded in each recipient's professional context,
+to start conversations with - grounded in each recipient's professional context,
 in the register a senior partner would write themselves.
 
 The core stance: **personalise from evidence with confidence, degrade gracefully
@@ -34,13 +34,13 @@ OUTREACH_LLM_PROVIDER=anthropic python -m outreach run --recipients data/recipie
 The Anthropic/OpenAI call paths are wired and current (`messages.create` /
 `chat.completions.create`); the bespoke tier receives the *same grounded brief* as
 the template tier (approved hooks only) and the grounding guardrail still runs on
-its output — so switching to a real model raises register quality **without**
+its output - so switching to a real model raises register quality **without**
 loosening the anti-hallucination contract. If the SDK call ever fails mid-batch,
 each message degrades to the deterministic template rather than erroring the run.
 
 ## Recipients are data, not code
 
-`data/recipients.csv` — swap in your own (the brief says bring your own data;
+`data/recipients.csv` - swap in your own (the brief says bring your own data;
 source legally via your LinkedIn / Coresignal trial). The five committed ones are
 realistic synthetic stand-ins across varied industry/seniority/hiring patterns;
 **two (R4, R5) are deliberately sparse** to exercise the low-information path.
@@ -60,16 +60,16 @@ recipient (CSV) ─▶ extract_hooks ─▶ confidence-filter ─▶ select_angl
                    (evidence+conf)   (sparse?)            (rule-based)   (tier)     (anti-hallucination)
 ```
 
-1. **Extract hooks** (`enrich.py`) — turn raw fields into citable facts, each
+1. **Extract hooks** (`enrich.py`) - turn raw fields into citable facts, each
    with a confidence assigned by *source reliability* (an explicit hiring post >
    a bio inference > a bare title) and a `kind` (`specific` vs `category`).
-2. **Confidence filter** (`pipeline._approve_hooks`) — only hooks above
+2. **Confidence filter** (`pipeline._approve_hooks`) - only hooks above
    `min_hook_confidence` may be referenced. If the best *specific* hook is too
    weak, the recipient is flagged **sparse** and the message stays category-level.
-3. **Select angle** (`angles.py`) — deterministic rules map the recipient to the
+3. **Select angle** (`angles.py`) - deterministic rules map the recipient to the
    best value-prop angle; thin signals fall back to a general introduction.
-4. **Compose** (`llm.py`) — two tiers, same grounded brief (see architecture doc).
-5. **Guardrail** (`guardrails.py`) — scan output for unsourced proper nouns,
+4. **Compose** (`llm.py`) - two tiers, same grounded brief (see architecture doc).
+5. **Guardrail** (`guardrails.py`) - scan output for unsourced proper nouns,
    unsupported hiring claims, or implied prior relationships; surface as flags.
 
 Full design + scalability + what-breaks-at-100 in

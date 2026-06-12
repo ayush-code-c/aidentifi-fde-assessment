@@ -1,6 +1,6 @@
 """Angle selection: map a recipient + their hooks to the best value-prop angle.
 
-Deterministic, rule-based, and explainable — the angle choice is itself a piece
+Deterministic, rule-based, and explainable - the angle choice is itself a piece
 of judgment a reviewer can audit. Falls back to `general_introduction` when
 signals are too thin to justify a specific angle (the sparse path).
 """
@@ -24,7 +24,7 @@ def select_angle(r: Recipient, hooks: list[Hook], cfg: dict) -> tuple[str, str]:
     if sn in ("founder", "principal") and r.hiring_signal == "strong":
         return "scaling_senior_team", "founder with an explicit senior-hiring signal"
     if sn in ("founder", "principal"):
-        return "founder_first_senior_hire", "founder/principal — first senior hire is high-stakes"
+        return "founder_first_senior_hire", "founder/principal - first senior hire is high-stakes"
 
     # Owner of a niche/regulated senior function.
     if any(k in ind for k in ("asset management", "wealth", "compliance", "risk", "fund")):

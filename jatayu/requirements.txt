@@ -6,7 +6,7 @@ openpyxl>=3.1
 requests>=2.31
 python-dotenv>=1.0
 
-# LLM rubric pass — install ONE depending on JATAYU_LLM_PROVIDER.
+# LLM rubric pass - install ONE depending on JATAYU_LLM_PROVIDER.
 # Neither is required for the default deterministic "mock" provider.
 anthropic>=0.40 ; extra == "anthropic"
 openai>=1.40 ; extra == "openai"

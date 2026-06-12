@@ -2,7 +2,7 @@
 
 Ranking is a deterministic sort on fit_score with config-declared tie-breakers,
 so the order is reproducible and explainable. Rationale is templated from the
-candidate's own strongest/weakest sub-scores — plain English, 2-4 lines — so it
+candidate's own strongest/weakest sub-scores - plain English, 2-4 lines - so it
 never asserts anything the scores don't support (no hallucinated detail).
 """
 from __future__ import annotations
@@ -35,8 +35,8 @@ def _rationale(sp: ScoredProfile, cfg: dict) -> str:
     strongest = subs[0]
     weakest = subs[-1]
     p = sp.profile
-    title = p.get("current_title") or p.get("title") or "—"
-    company = p.get("current_company") or p.get("active_experience_company_name") or "—"
+    title = p.get("current_title") or p.get("title") or "-"
+    company = p.get("current_company") or p.get("active_experience_company_name") or "-"
 
     line1 = (
         f"{title} at {company}; ~{sp.years_relevant:g} yrs in-function. "

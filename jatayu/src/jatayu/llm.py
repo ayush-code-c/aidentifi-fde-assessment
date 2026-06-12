@@ -1,9 +1,9 @@
 """Provider-agnostic LLM scorer for the rubric pass.
 
 Providers:
-  * "anthropic" — Claude (uses ANTHROPIC_API_KEY).
-  * "openai"    — GPT (uses OPENAI_API_KEY).
-  * "mock"      — deterministic, key-free. Scores by hashing rubric+evidence
+  * "anthropic" - Claude (uses ANTHROPIC_API_KEY).
+  * "openai"    - GPT (uses OPENAI_API_KEY).
+  * "mock"      - deterministic, key-free. Scores by hashing rubric+evidence
                   into a stable pseudo-judgment. Lets the whole pipeline run and
                   produce every deliverable with zero external dependencies, and
                   makes offline runs reproducible.

@@ -1,7 +1,7 @@
-"""Coresignal client — two interchangeable backends.
+"""Coresignal client - two interchangeable backends.
 
-* LiveClient    — real Coresignal clean-profile API (search + collect/bulk).
-* FixtureClient — loads local JSON fixtures; zero credits, zero network.
+* LiveClient    - real Coresignal clean-profile API (search + collect/bulk).
+* FixtureClient - loads local JSON fixtures; zero credits, zero network.
 
 Both implement the same interface so the pipeline is identical in dev/offline
 testing and in production. Every credit-bearing operation is logged through the
@@ -69,7 +69,7 @@ class LiveClient(BaseClient):
             search_query_or_profile_id=json.dumps(query["query"])[:200],
             credit_cost=CreditLedger.COST_PREVIEW, profiles_returned=0,
             stage_purpose=purpose, useful_yes_no="yes",
-            notes="filter preview (no collect) — dev validation", stage=self.stage,
+            notes="filter preview (no collect) - dev validation", stage=self.stage,
         )
         return data
 

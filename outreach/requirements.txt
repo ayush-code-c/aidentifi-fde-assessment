@@ -1,9 +1,9 @@
-# Core (required) — the deterministic template tier needs only PyYAML.
+# Core (required) - the deterministic template tier needs only PyYAML.
 PyYAML>=6.0
 
 # .env support
 python-dotenv>=1.0
 
-# Bespoke LLM tier — install ONE per OUTREACH_LLM_PROVIDER (neither needed for mock).
+# Bespoke LLM tier - install ONE per OUTREACH_LLM_PROVIDER (neither needed for mock).
 anthropic>=0.40 ; extra == "anthropic"
 openai>=1.40 ; extra == "openai"

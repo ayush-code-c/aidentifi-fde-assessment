@@ -1,8 +1,8 @@
 """Configuration & runtime settings loading.
 
 Two layers:
-  1. Mandate config (YAML)   — *what* we are looking for. Versioned, reviewable.
-  2. Runtime settings (.env) — *how* we run: credentials, mode, LLM provider.
+  1. Mandate config (YAML)   - *what* we are looking for. Versioned, reviewable.
+  2. Runtime settings (.env) - *how* we run: credentials, mode, LLM provider.
 
 Nothing secret ever lives in the mandate YAML, so configs are safe to commit.
 """
@@ -15,7 +15,7 @@ from typing import Any
 
 import yaml
 
-# Optional .env support — works without it (env vars still read).
+# Optional .env support - works without it (env vars still read).
 try:
     from dotenv import load_dotenv
 
@@ -89,3 +89,18 @@ class Settings:
                 "JATAYU_MODE=live but CORESIGNAL_API_KEY is unset. "
                 "Set it in .env or run offline mode."
             )
+
+    def autoselect_fixtures(self, cfg: dict[str, Any]) -> None:
+        """In offline mode, point fixtures_path at THIS mandate's fixtures
+        (e.g. mandate_b_invdir_sfo -> fixtures/mandate_b_raw_profiles.json)
+        unless the caller explicitly pinned JATAYU_FIXTURES. Without this,
+        every mandate would silently fall back to Mandate A's fixtures.
+        """
+        if self.mode != "offline" or "JATAYU_FIXTURES" in os.environ:
+            return
+        mandate_id = str(cfg.get("mandate", {}).get("id", ""))
+        parts = mandate_id.split("_")
+        if len(parts) >= 2:
+            candidate = f"fixtures/{parts[0]}_{parts[1]}_raw_profiles.json"
+            if Path(candidate).exists():
+                self.fixtures_path = candidate

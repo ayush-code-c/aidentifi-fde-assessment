@@ -1,5 +1,5 @@
 # =============================================================================
-# Jatayu mandate config — MANDATE A
+# Jatayu mandate config - MANDATE A
 # Sole Compliance Officer, Singapore MAS-licensed Asset Manager
 # =============================================================================
 # This file is the ENTIRE mandate definition. The Python code is mandate-
@@ -10,7 +10,7 @@
 
 mandate:
   id: mandate_a_compliance_sg
-  name: "Sole Compliance Officer — Singapore Asset Manager"
+  name: "Sole Compliance Officer - Singapore Asset Manager"
   description: >
     Sole compliance officer for a Singapore-HQ, MAS-licensed asset manager
     (~SGD 400-700M proprietary AUM, larger third-party AUM via open-architecture
@@ -19,7 +19,7 @@ mandate:
     team beneath the hire.
 
 # -----------------------------------------------------------------------------
-# STEP 1 — FILTER  (the Coresignal query: maximise 90%+ fits in the raw pull)
+# STEP 1 - FILTER  (the Coresignal query: maximise 90%+ fits in the raw pull)
 # -----------------------------------------------------------------------------
 # Philosophy: the brief warns that title-matching "Compliance + Singapore +
 # Asset Management" returns hundreds of wrong fits. So the HARD filter stays
@@ -28,7 +28,7 @@ mandate:
 # can reason rather than exclude. We tighten with must_not to strip the obvious
 # wrong-pools the brief names (pure banking, Big 4 advisory, regulator-only).
 filter:
-  # Coresignal Employee "clean" API — Elasticsearch DSL fragments, assembled by
+  # Coresignal Employee "clean" API - Elasticsearch DSL fragments, assembled by
   # src/jatayu/filters.py. Field names follow Coresignal member schema.
   location:
     countries: ["Singapore"]
@@ -36,7 +36,7 @@ filter:
     # Coresignal); PR/citizen nuance is handled as a soft signal in scoring.
   active_experience: true            # require a current (no end-date) role
 
-  # Permissive function gate — ANY of these in title OR headline OR a recent role
+  # Permissive function gate - ANY of these in title OR headline OR a recent role
   title_any:
     - "compliance"
     - "chief compliance"
@@ -48,7 +48,7 @@ filter:
     - "MLRO"                          # money laundering reporting officer
     - "risk and compliance"
 
-  # Firm-function gate — the candidate must have worked in/around asset & wealth
+  # Firm-function gate - the candidate must have worked in/around asset & wealth
   # management, NOT only banking/insurance/audit. Applied to company industry and
   # company name tokens across the experience array.
   industry_any:
@@ -58,7 +58,7 @@ filter:
     - "Venture Capital & Private Equity"
     - "Capital Markets"
 
-  # Hard exclusions — the brief's named "weak" pools that we can exclude cheaply
+  # Hard exclusions - the brief's named "weak" pools that we can exclude cheaply
   # without losing true positives. Kept conservative on purpose.
   must_not_title:
     - "audit associate"
@@ -66,7 +66,7 @@ filter:
     - "intern"
     - "student"
   must_not_current_company:
-    # Regulators / enforcement bodies — "MAS regulators with no industry side".
+    # Regulators / enforcement bodies - "MAS regulators with no industry side".
     # NOTE: only excludes if CURRENT employer; ex-MAS who moved industry-side is
     # a positive and must survive the filter.
     - "Monetary Authority of Singapore"
@@ -75,17 +75,17 @@ filter:
     # Total years in a compliance/regulatory function. Brief says 8-15 yrs;
     # we floor at 7 to avoid clipping strong 8-yr profiles whose Coresignal
     # date math rounds low, and we do NOT hard-cap the top (a 17-yr CCO is not a
-    # wrong fit) — seniority over-shoot is a scoring nuance, not a filter.
+    # wrong fit) - seniority over-shoot is a scoring nuance, not a filter.
     min_years_in_function: 7
     function_keywords: ["compliance", "regulatory", "MLRO", "risk and compliance"]
 
-  # Pull sizing — see credit strategy in docs/architecture.md.
+  # Pull sizing - see credit strategy in docs/architecture.md.
   pull:
     target_raw_profiles: 220          # production raw pull ceiling
     page_size: 100
 
 # -----------------------------------------------------------------------------
-# STEP 2 — ENRICH (which fields we fetch full profiles for; credit-bearing)
+# STEP 2 - ENRICH (which fields we fetch full profiles for; credit-bearing)
 # -----------------------------------------------------------------------------
 enrich:
   fetch_full_profile: true            # clean profile API, bulk download
@@ -102,7 +102,7 @@ enrich:
     drop_if_location_not_sg: true
 
 # -----------------------------------------------------------------------------
-# STEP 3 — SCORE  (sub-scores → fit_score; ranking quality lives here)
+# STEP 3 - SCORE  (sub-scores → fit_score; ranking quality lives here)
 # -----------------------------------------------------------------------------
 # Each sub-score is 0-100. fit_score is the weighted sum (weights sum to 1.0).
 # Each sub-score blends DETERMINISTIC features (cheap, transparent, auditable)
@@ -192,7 +192,7 @@ scoring:
       weight: 0.12
       description: >
         Exposure to open-architecture / third-party fund distribution, private
-        markets (PE/PC/HF), and VCC structures — the firm's actual product shape.
+        markets (PE/PC/HF), and VCC structures - the firm's actual product shape.
       deterministic:
         positive:
           - {regex_any: "open[- ]architecture", points: 20}
@@ -221,21 +221,21 @@ scoring:
           - {sg_tenure_years_lte: 3, points: -15}              # transient / new to SG
       llm_rubric: >
         Score 0-100 combining (a) length and continuity of Singapore-based
-        career as a proxy for commitment to stay, and (b) a COMMERCIAL posture —
+        career as a proxy for commitment to stay, and (b) a COMMERCIAL posture -
         partnering with the front office in a growth-mode firm rather than a
         purely defensive control function.
 
 # -----------------------------------------------------------------------------
-# STEP 4 — RANK & REPORT
+# STEP 4 - RANK & REPORT
 # -----------------------------------------------------------------------------
 ranking:
   top_n: 10
   tie_breakers: ["compliance_ownership", "mas_regulatory_fit", "years_relevant_experience"]
   # A candidate with a hard concern is surfaced, never silently dropped.
   flag_rules:
-    - {if_sub_score_below: {firm_type_fit: 40}, flag: "firm-type mismatch — verify employer is buy-side"}
-    - {if_sub_score_below: {mas_regulatory_fit: 35}, flag: "thin MAS/CMS evidence — confirm in screen"}
-    - {if_sg_tenure_below_years: 3, flag: "short SG tenure — confirm residency/commitment"}
+    - {if_sub_score_below: {firm_type_fit: 40}, flag: "firm-type mismatch - verify employer is buy-side"}
+    - {if_sub_score_below: {mas_regulatory_fit: 35}, flag: "thin MAS/CMS evidence - confirm in screen"}
+    - {if_sg_tenure_below_years: 3, flag: "short SG tenure - confirm residency/commitment"}
   confidence:
     # Confidence reflects DATA completeness, not fit. A great-looking but sparse
     # profile gets HIGH fit + LOW confidence, surfaced honestly to the reviewer.

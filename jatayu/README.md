@@ -1,17 +1,17 @@
-# Jatayu — Sourcing & Ranking Tool (Q1)
+# Jatayu - Sourcing & Ranking Tool (Q1)
 
 Given a mandate brief, Jatayu returns a tightly-fit, ranked shortlist of
 candidates with minimal human effort. The engine is **mandate-agnostic**: every
 mandate-specific decision lives in a YAML config, so switching from a Singapore
 compliance search to a family-office investment search is a config change, not a
-code change (proven — see [`docs/q1b_config_migration.md`](docs/q1b_config_migration.md)).
+code change (proven - see [`docs/q1b_config_migration.md`](docs/q1b_config_migration.md)).
 
-**Executed mandate:** Mandate A — Sole Compliance Officer, Singapore Asset Manager.
-**Migration-only mandate:** Mandate B — Investment Director, SG Single Family Office.
+**Executed mandate:** Mandate A - Sole Compliance Officer, Singapore Asset Manager.
+**Migration-only mandate:** Mandate B - Investment Director, SG Single Family Office.
 
 ---
 
-## TL;DR — run it in 30 seconds (no keys, no credits)
+## TL;DR - run it in 30 seconds (no keys, no credits)
 
 ```bash
 cd jatayu
@@ -53,7 +53,7 @@ python -m jatayu show-query --mandate config/mandate_a_compliance_sg.yaml
 | Keys | none | `CORESIGNAL_API_KEY` |
 | Purpose | dev, CI, demo, reproducible grading | the real production pull |
 
-The pipeline code is identical in both modes — only the client backend swaps
+The pipeline code is identical in both modes - only the client backend swaps
 (`FixtureClient` ↔ `LiveClient`). The fixtures mirror the Coresignal clean
 Employee schema (field names + nesting), so nothing downstream changes.
 
@@ -99,17 +99,17 @@ config (YAML)                       ┌─────────────�
             rank + flag + rationale └─────────────────────────────────────────┘
 ```
 
-1. **Filter** — `filters.py` compiles the YAML `filter:` block into a Coresignal
+1. **Filter** - `filters.py` compiles the YAML `filter:` block into a Coresignal
    Elasticsearch query. Hard on geography + function, permissive on title (the
    brief warns title-matching over-includes); the firm-scale / business-model
    discrimination is pushed into scoring where we can *reason* instead of
    *exclude*.
-2. **Pre-screen** — a **free, local** gate drops obvious non-fits *before* we
+2. **Pre-screen** - a **free, local** gate drops obvious non-fits *before* we
    pay to enrich them. No production credit is ever spent on a profile we could
    reject for free.
-3. **Enrich** — collect full clean profiles (the credit-bearing step). Every
+3. **Enrich** - collect full clean profiles (the credit-bearing step). Every
    call is recorded in the `CreditLedger`.
-4. **Score → Rank** — each sub-score blends transparent **deterministic rules**
+4. **Score → Rank** - each sub-score blends transparent **deterministic rules**
    (declared in YAML) with an **LLM rubric** pass for nuance. `fit_score = Σ
    weightᵢ × blended_sub_scoreᵢ`. Ranking is a deterministic, explainable sort
    with config tie-breakers, per-candidate flags, and a templated rationale.
@@ -123,11 +123,11 @@ Rationale** are in [`docs/architecture.md`](docs/architecture.md).
 
 Everything a recruiter would want to change is in the config, not the code:
 
-- **Sub-score weights** — `scoring.sub_scores.<name>.weight` (must sum to 1.0;
+- **Sub-score weights** - `scoring.sub_scores.<name>.weight` (must sum to 1.0;
   the loader enforces it).
-- **LLM-vs-deterministic blend** — `llm_blend_default` or per sub-score.
-- **What counts as signal** — the `deterministic.positive/negative` rule lists.
-- **Flags & confidence thresholds** — `ranking.flag_rules`, `ranking.confidence`.
+- **LLM-vs-deterministic blend** - `llm_blend_default` or per sub-score.
+- **What counts as signal** - the `deterministic.positive/negative` rule lists.
+- **Flags & confidence thresholds** - `ranking.flag_rules`, `ranking.confidence`.
 
 And every number is auditable: `scoring_intermediate.csv` emits the
 deterministic score, the LLM score, the blended value, **and the exact rule hits**
@@ -169,4 +169,4 @@ PYTHONPATH=src python tests/test_smoke.py     # or: python -m pytest -q tests
 
 The suite asserts config validity, that the ES query carries the geo + function
 gates, that all deliverables are produced offline at 0 credits, and the key
-ranking invariant — **a sole-CCO-at-a-boutique outranks a junior analyst.**
+ranking invariant - **a sole-CCO-at-a-boutique outranks a junior analyst.**

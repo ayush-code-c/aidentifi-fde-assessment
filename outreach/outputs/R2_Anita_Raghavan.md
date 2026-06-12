@@ -1,6 +1,6 @@
-# Outreach — Anita Raghavan (Partner, Meridian Growth Partners)
+# Outreach - Anita Raghavan (Partner, Meridian Growth Partners)
 
-**Channel:** email  |  **Angle:** `portfolio_talent` — PE/VC partner who builds leadership across portfolio cos
+**Channel:** email  |  **Angle:** `portfolio_talent` - PE/VC partner who builds leadership across portfolio cos
 **Profile:** rich  |  Personalised from confirmed hooks.
 
 ---
@@ -9,7 +9,7 @@
 
 Hi Anita,
 
-I saw you spoke on a panel about 'getting the CFO hire right in portfolio companies' — that's exactly the kind of moment we're built for. AI-native executive search — engineering-built sourcing that produces sharper senior shortlists, faster, than traditional retained search.
+I saw you spoke on a panel about 'getting the CFO hire right in portfolio companies' - that's exactly the kind of moment we're built for. AI-native executive search - engineering-built sourcing that produces sharper senior shortlists, faster, than traditional retained search.
 
 Repeatable senior placements across a portfolio reward a systematic, data-driven search partner. Sits on 5 portfolio boards, so that fit problem is likely already on your desk.
 

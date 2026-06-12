@@ -54,6 +54,8 @@ def run(
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
+    settings.autoselect_fixtures(cfg)
+
     ledger = CreditLedger()
     client = make_client(settings, ledger, stage=stage)
     llm = LLMScorer(

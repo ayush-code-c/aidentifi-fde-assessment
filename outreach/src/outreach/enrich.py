@@ -2,9 +2,9 @@
 
 A hook is a single, citable fact the message is allowed to lean on. Each carries
 a confidence in [0,1] and a `kind`:
-  * specific  — a concrete, recipient-unique fact (a post, a named event, a
+  * specific  - a concrete, recipient-unique fact (a post, a named event, a
                 stated hiring intent). High value, must be well-sourced.
-  * category  — role/industry/seniority truth. Always available, low specificity;
+  * category  - role/industry/seniority truth. Always available, low specificity;
                 safe to use for sparse recipients without fabricating.
 
 Confidence is assigned by SOURCE, not by the model's enthusiasm. An explicit
@@ -57,7 +57,7 @@ def extract_hooks(r: Recipient) -> list[Hook]:
                           "specific", "hiring_signal"))
 
     if r.bio:
-        # Bio facts are useful but inferred — capped at medium confidence, and we
+        # Bio facts are useful but inferred - capped at medium confidence, and we
         # only surface the most concrete sentence, not the whole bio.
         sent = _most_concrete_sentence(r.bio)
         if sent:

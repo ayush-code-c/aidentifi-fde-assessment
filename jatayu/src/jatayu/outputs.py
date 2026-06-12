@@ -152,7 +152,7 @@ def write_top10_excel(
             "rationale": sp.rationale,
             "confidence": sp.confidence,
             "credits_spent_on_this_candidate": ledger.spent_on_profile(str(p.get("id", ""))),
-            "concerns_or_flags": "; ".join(sp.flags) or "—",
+            "concerns_or_flags": "; ".join(sp.flags) or "-",
         }
         ws.append([record.get(c, "") for c in columns])
 

@@ -3,7 +3,7 @@
 After composition we scan the message for SPECIFICS (capitalised multi-word
 proper nouns, quoted phrases) that do not trace back to an approved hook or the
 recipient's own known fields. Anything unsourced is flagged. This is the
-'do you hallucinate to fill the gap?' check made mechanical — for sparse
+'do you hallucinate to fill the gap?' check made mechanical - for sparse
 recipients especially, where the temptation to invent is highest.
 
 The guardrail does not silently rewrite; it returns flags so the reviewer (and

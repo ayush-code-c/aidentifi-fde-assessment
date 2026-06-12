@@ -1,6 +1,6 @@
-# Outreach — Marcus Lim (Co-Founder & CEO, Northpoint Pay)
+# Outreach - Marcus Lim (Co-Founder & CEO, Northpoint Pay)
 
-**Channel:** email  |  **Angle:** `scaling_senior_team` — founder with an explicit senior-hiring signal
+**Channel:** email  |  **Angle:** `scaling_senior_team` - founder with an explicit senior-hiring signal
 **Profile:** rich  |  Personalised from confirmed hooks.
 
 ---
@@ -9,7 +9,7 @@
 
 Hi Marcus,
 
-I saw you posted about closing Series B and 'hiring across senior risk and finance leadership over the next two quarters' — that's exactly the kind of moment we're built for. AI-native executive search — engineering-built sourcing that produces sharper senior shortlists, faster, than traditional retained search.
+I saw you posted about closing Series B and 'hiring across senior risk and finance leadership over the next two quarters' - that's exactly the kind of moment we're built for. AI-native executive search - engineering-built sourcing that produces sharper senior shortlists, faster, than traditional retained search.
 
 Growth creates senior hiring you can't afford to get wrong; we de-risk the senior hire. You're actively hiring senior leadership, so that fit problem is likely already on your desk.
 

@@ -1,4 +1,4 @@
-"""Outreach — personalised BD outreach generator for executive search (Q2).
+"""Outreach - personalised BD outreach generator for executive search (Q2).
 
 Recipients are data (CSV). Positioning + policy are config (YAML). The engine is
 generic. Core stance: personalise from *evidence with confidence*, degrade

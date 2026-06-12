@@ -1,4 +1,4 @@
-"""Message composition — provider-agnostic.
+"""Message composition - provider-agnostic.
 
 Two tiers, by design (this maps directly onto the scalability story):
   * "mock"  = a deterministic TEMPLATE composer. Key-free, reproducible, and is
@@ -77,7 +77,7 @@ class Composer:
 
     # -- bespoke tiers -----------------------------------------------------
     def _prompt(self, b: Brief) -> str:
-        hooks = "\n".join(f"- {h}" for h in b.approved_hooks) or "- (none — sparse profile)"
+        hooks = "\n".join(f"- {h}" for h in b.approved_hooks) or "- (none - sparse profile)"
         return textwrap.dedent(f"""\
             ABOUT_US: {b.company_one_liner}
             ANGLE_THESIS: {b.angle_thesis}
@@ -119,13 +119,13 @@ class Composer:
     def _template(self, b: Brief) -> dict:
         category = b.category_phrases[0] if b.category_phrases else "your work"
         if b.is_sparse or not b.specific_clauses:
-            # honest, category-level opener — no invented specifics
+            # honest, category-level opener - no invented specifics
             opener = (f"I run executive search at a firm focused on senior hiring, and "
                       f"{category} puts you squarely in the space we work in.")
-            subject = "Senior search — a quick introduction"
+            subject = "Senior search - a quick introduction"
             second_line = ""
         else:
-            opener = (f"{b.specific_clauses[0]} — that's exactly the kind of moment "
+            opener = (f"{b.specific_clauses[0]} - that's exactly the kind of moment "
                       f"we're built for.")
             subject = "On your senior hiring"
             second_line = (

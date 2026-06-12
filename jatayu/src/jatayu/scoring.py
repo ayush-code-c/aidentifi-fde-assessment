@@ -1,8 +1,8 @@
-"""Scoring engine — deterministic features blended with an LLM rubric pass.
+"""Scoring engine - deterministic features blended with an LLM rubric pass.
 
 Each sub-score is computed twice:
-  * deterministic — transparent, auditable rules declared in the mandate YAML.
-  * llm           — a rubric judgment for the nuanced "texture" the brief
+  * deterministic - transparent, auditable rules declared in the mandate YAML.
+  * llm           - a rubric judgment for the nuanced "texture" the brief
                     describes (sole-ownership, firm-scale fit, etc.).
 The two are blended per-sub-score (`llm_blend`). This is the recruiter-override
 path: every number traces back to a config weight or a logged rule hit, and the

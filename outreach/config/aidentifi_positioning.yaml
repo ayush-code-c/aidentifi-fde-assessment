@@ -1,7 +1,7 @@
 # =============================================================================
 # Aidentifi positioning + outreach policy  (Q2)
 # =============================================================================
-# WORKING ASSUMPTION (per brief — not deep research). Aidentifi is an AI-native
+# WORKING ASSUMPTION (per brief - not deep research). Aidentifi is an AI-native
 # executive search firm: it pairs forward-deployed engineering (tools like
 # Jatayu) with executive-search domain depth to produce tightly-calibrated
 # senior shortlists faster and more precisely than traditional retained search.
@@ -11,13 +11,13 @@
 company:
   name: Aidentifi
   one_liner: >
-    AI-native executive search — engineering-built sourcing that produces
+    AI-native executive search - engineering-built sourcing that produces
     sharper senior shortlists, faster, than traditional retained search.
   proof_points:
     - "Sourcing tooling that ranks against the actual texture of a mandate, not job-title keywords."
     - "Domain depth in financial services, asset & wealth management, and family offices."
-    - "Transparent, calibrated fit scoring — every shortlist decision is explainable."
-  # What we are NOT — keeps outreach honest and avoids over-claiming.
+    - "Transparent, calibrated fit scoring - every shortlist decision is explainable."
+  # What we are NOT - keeps outreach honest and avoids over-claiming.
   guardrails:
     - "Never claim a prior relationship that doesn't exist."
     - "Never invent a named mutual connection, deal, or event."
@@ -49,18 +49,18 @@ angles:
     cta: "a short conversation about that first senior hire when the time is right"
 
   general_introduction:
-    when: "Fallback when signals are thin — lead with category relevance, not specifics."
+    when: "Fallback when signals are thin - lead with category relevance, not specifics."
     thesis: "An introduction to how we approach senior search in your space."
     cta: "a brief introduction whenever it's useful"
 
 # -----------------------------------------------------------------------------
-# Outreach policy — tone, length, channel, anti-hallucination.
+# Outreach policy - tone, length, channel, anti-hallucination.
 # -----------------------------------------------------------------------------
 policy:
   channel_default: email
   registers:
     email:  { max_words: 130, greeting: "Hi {first_name}," , signoff: "Best,\nthe Aidentifi team" }
-    linkedin: { max_words: 75, greeting: "Hi {first_name} —", signoff: "— Aidentifi" }
+    linkedin: { max_words: 75, greeting: "Hi {first_name} -", signoff: "- Aidentifi" }
   voice: >
     The register a senior partner would write themselves: direct, specific, no
     marketing adjectives, one clear idea, one soft ask. No "I hope this finds you
