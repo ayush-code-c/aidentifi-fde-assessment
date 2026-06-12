@@ -1,4 +1,4 @@
-# Aidentifi — Forward Deployed Engineer Assessment
+# Aidentifi: Forward Deployed Engineer Assessment
 
 Submission repo. Two tools, two strategic documents, one config-migration doc,
 and one diagnostic essay. Everything runs end-to-end **with no external accounts**
